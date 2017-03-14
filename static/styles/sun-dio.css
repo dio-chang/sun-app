@@ -669,6 +669,9 @@ a.tip-forget {
 .index-notice {
     background: url(../images/noticebg-sun.png) center no-repeat;
     background-size: cover;
+    margin-top: 0px;
+}
+.index-notice-div {
     margin-top: -34px;
 }
 .notice .notice-list {
@@ -917,4 +920,42 @@ a.tip-forget {
     height: 30px;
     width: 10px;
     display: inline-block;
+}
+
+.header-panel>a, .static-btn {
+    color: #bd5f5f;
+    margin: 0 10px;
+    text-shadow: 0 1px 0 #000;
+}
+
+.hy {color:#f39c51;}
+.header-panel>._vr_nickname {
+    background: url();
+    padding: 0px;
+    margin: 0 5px;
+	color:#f39c51;
+}
+.dropdown-menu {
+	background-color:#fff;
+}
+.dropdown-menu>li>a {
+    color: #333;
+}
+.header-panel .members-dropdown>li>a:focus, .header-panel .members-dropdown>li>a:hover {
+    color: #333;
+    background-color: rgba(0,0,0,.1);
+}
+.header-panel>._vr_notice {
+    width: 18px;
+    height: 18px;
+    background: url(../images/newsbgs.png) center 8px no-repeat;
+    display: inline-block;
+    padding-bottom: 30px;
+    text-align: center;
+    margin-left: 0;
+    color: #fff;
+}
+.logOut {
+    background: url(../images/ic-log-out.png) 2px 2px no-repeat;
+	padding-left:20px;
 }
