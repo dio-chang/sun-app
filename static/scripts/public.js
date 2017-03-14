@@ -524,7 +524,7 @@ function initMenuEvents() {
         mega[_rel + '_timer'] = setTimeout(function() {
             $('[rel]').removeClass('active');
             $activeElement.addClass('active');
-            $('#' + _rel).stop(true, true).fadeOut();
+            $('#' + _rel).stop(true, true).fadeOut(0);
         }, 150);
     });
 }
