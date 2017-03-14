@@ -128,34 +128,52 @@ body {
     position: absolute
 }
 .index-rows-02 .float-left .play-1 {
-    background: url(../images/fp1.jpg) no-repeat;
+    background: url(../images/fp1.png) no-repeat;
     width: 171px;
     height: 89px;
     display: inline-block;
-    margin-left: 30px
+    margin-left: 30px;
+    vertical-align: top;
+    color: #fff;
+    font-size: 15px;
+    padding-left: 15px;
+    line-height: 57px;
+	    transition: all 0.25s ease-in-out;
 }
 .index-rows-02 .float-left .play-1:hover {
-    background: url(../images/fp11.jpg)
+    background: url(../images/fp11.png) -12px -12px;
 }
 .index-rows-02 .float-left .play-2:hover {
-    background: url(../images/fp22.jpg)
+    background: url(../images/fp11.png) -12px -12px;
 }
 .index-rows-02 .float-left .play-3:hover {
-    background: url(../images/fp33.jpg)
+    background: url(../images/fp11.png) -12px -12px;
 }
 .index-rows-02 .float-left .play-2 {
-    background: url(../images/fp2.jpg) no-repeat;
+    background: url(../images/fp1.png) no-repeat;
     width: 171px;
     height: 89px;
     display: inline-block;
-    margin-left: 10px
+    margin-left: 10px;
+    vertical-align: top;
+    color: #fff;
+    font-size: 15px;
+    padding-left: 15px;
+    line-height: 57px;
+	    transition: all 0.25s ease-in-out;
 }
 .index-rows-02 .float-left .play-3 {
-    background: url(../images/fp3.jpg) no-repeat;
+    background: url(../images/fp1.png) no-repeat;
     width: 171px;
     height: 89px;
     display: inline-block;
-    margin-left: 10px
+    margin-left: 10px;
+    vertical-align: top;
+    color: #fff;
+    font-size: 15px;
+    padding-left: 15px;
+    line-height: 57px;
+	    transition: all 0.25s ease-in-out;
 }
 ._vr_nav .active {
     background: url(../images/menu-active.png) center bottom no-repeat;
@@ -568,7 +586,19 @@ a.tip-forget {
 
 }
 
-
+.index-rows-03 h3 {
+	text-align: center;
+    font-size: 14px;
+    color: #eee;
+    margin-top: 135px;
+    padding-right: 25px;
+}
+.index-rows-03 p {
+	color:#7d6f71;
+   line-height: 30px;
+    text-align: center;
+    padding-right: 25px;
+}
 
 .index-rows-04 {
     min-height: 500px;
