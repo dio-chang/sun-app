@@ -1,0 +1,136 @@
+@@include("./layout/header.html" , {
+      tit:"资金明细",
+})
+	<link rel="stylesheet" type="text/css" href="@@{csspath}/static/styles/fundspublic.css">
+	<link rel="stylesheet" type="text/css" href="@@{csspath}/static/styles/progress-ring.css">
+	<link rel="stylesheet" type="text/css" href="@@{csspath}/static/styles/transactionRecord.css">
+	@@include("./layout/zichanLayout.html")
+		<div class="conditionalNav">
+			<ul class="select">
+				<li class="select-list">
+					<dl id="select1">
+						<dt>资金种类：</dt>
+						<dd class="select-all selected" trade-type="1"><a href="javascript:;">充值</a></dd>
+						<dd trade-type="2"><a href="javascript:;">提款</a></dd>
+						<dd trade-type="3"><a href="javascript:;">转账</a></dd>
+						<dd trade-type="4"><a href="javascript:;">红利</a></dd>
+						<dd trade-type="5"><a href="javascript:;">返水</a></dd>
+					</dl> 
+
+				</li>
+				<li class="select-list">
+					<dl id="select2">
+						<dt>选择日期：</dt>
+						<dd class="select-all" data-type="1"><a href="javascript:;">昨天</a></dd>
+						<dd class="selected2" data-type="2"><a href="javascript:;">今天</a></dd>
+						<dd data-type="3"><a href="javascript:;">一周内</a></dd>
+						<dd data-type="4"><a href="javascript:;">两周内</a></dd>
+						<dd data-type="5"><a href="javascript:;">1个月内</a></dd>
+						<dd data-type="6"><a href="javascript:;">上周</a></dd>
+						<dd data-type="7"><a href="javascript:;">上月</a></dd>
+					</dl>
+				</li>
+				<!-- <li class="select-list">
+					<dl id="select3">
+						<dt>选择类型：</dt>
+						<dd class="select-all selected"><a href="javascript:;">全部</a></dd>
+						<dd><a href="javascript:;">网页</a></dd>
+						<dd><a href="javascript:;">Android</a></dd>
+						<dd><a href="javascript:;">iPhone</a></dd>
+						<dd><a href="javascript:;">Html5</a></dd>
+					</dl>
+				</li> -->
+				
+			</ul>
+		</div>
+		<div class="shuju">
+			<table class="list">
+				<thead>
+					<tr>
+						<th width="116">序号</th>
+						<th width="152">时间</th>
+						<th width="118">交易类型</th>
+						<th width="108">客户端</th>
+						<th width="110">金额 </th>
+						<th width="206">备注</th>
+						<th width="130"> 单据状态</th>
+						<th width="115">催到账</th>
+						<th width="145">详情</th>
+					</tr>
+				</thead>
+				<tbody class="gettradelist"></tbody>
+			</table>
+			<script type="text/template" id="gettrade">
+				<% _(data).each(function (v, k) { %>
+					<tr>
+						<td><%= k+1 %></td>
+						<td class="addtime"><%=v.get('addtime')%></td>
+						<td><%=v.get('tradetype')%> </td>
+						<td>网页 </td>
+						<td><%=v.get('amount')%></td>
+						<td><%=v.get('remark')%></td>
+						<td class="statusType">
+
+							<%=v.get('status')%>
+
+						</td>
+						<td></td>
+						<td class="xiangqin" data-id="<%=v.get('id')%>" data-tradetype="<%=v.get('tradetype')%>">详情</td>
+					</tr>
+				<% }) %>
+					<tr class="pageList">
+						<td class="first_page">首页</td>
+						<td class="prev_page">上一页</td>
+						<td> <input class="pageinput" name="currentpage" type="text" value="<%= currentpage %>" >
+						</td>
+						<td class="goto">Go</td>
+						<td class="next_page">下一页</td>
+						<td class="last_page">尾页</td>
+					</tr>
+			</script>
+		</div>
+	</div>
+	<div class="detailPob pob">
+		<h3><p>订单详情</p><span class="close"></span><div class="clear"></div></h3>
+		<div class="pob_left">
+			<ul class="poblist1">
+				<li>订单编号：<span class="orderno"></span></li>
+				<li>发起时间：<span class="completetime"></span></li>
+				<li>交易类型：<span class="tradetype"></span></li>
+				<li>交易货币：<span class="">RMB</span></li>
+				<li>单据状态：<span class="tradestatus"></span></li>
+				<li>存款备注：<span class=""></span></li>
+				<li>转账方向：<span class="fangxiang"></span></li>
+			</ul>
+			<ul class="poblist2">
+				<li>姓名：<span id="name"></span><button class="copy" data-clipboard-action="copy" data-clipboard-target="#name">复制</button></li>
+				<li>账号：<span id="accountNumber"></span><button class="copy" data-clipboard-action="copy" data-clipboard-target="#accountNumber">复制</button></li>
+				<li>金额：<span id="amount"></span><button class="copy"  data-clipboard-action="copy" data-clipboard-target="#amount">复制</button></li>
+				<li>地址：<span id=""></span></li>
+				<li class="fuyan">附言：<span id="fuyan"></span><button  class="copy" data-clipboard-action="copy" data-clipboard-target="#fuyan">复制</button></li>
+			</ul>
+		</div>
+		<div class="pob_right">
+			<h4>充值教程</h4>
+			<div class="tutorbox">
+				<ul class="tutorial">
+					<li><img src="@@{csspath}/static/images/tutorial1.png"></li>
+					<li><img src="@@{csspath}/static/images/tutorial2.png"></li>
+				</ul>
+				<ol>
+					<li class="oneBtn">1</li>
+					<li class="twoBtn">2</li>
+				</ol>
+			</div>
+			
+		</div>
+		
+	</div>
+	<p class="fuzhitips"></p>
+@@include("./layout/footer.html")	
+	<script type="text/javascript" src="@@{jspath}/static/scripts/jquery.classyloader.min.js"></script>
+	<script type="text/javascript" src="@@{jspath}/static/scripts/clipboard.min.js"></script>
+	<script src="@@{jspath}/static/scripts/public_personal.js"></script>
+	<script type="text/javascript" src="@@{jspath}/static/scripts/transactionRecord.js"></script>
+</body>
+</html>

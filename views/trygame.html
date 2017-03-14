@@ -1,0 +1,59 @@
+@@include("./layout/header.html" , {
+      tit:"游戏试玩",
+})
+@@include("./layout/noticeLayout.html")
+	<link rel="stylesheet" type="text/css" href="@@{csspath}/static/styles/trygame.css">
+	<div class="gameBox">
+		<iframe scrolling="no" id="gameFrame" frameborder="0" allowtransparency="true" style="width: 1000px; min-height:800px; display: block" src=""></iframe>
+		<div class="gameright">
+			<dl>
+				<dt><img src="@@{imgpath}/static/images/tryball.png"></dt>
+				<dd><a href="@@{views}register.html">立即开户</a></dd>
+			</dl>
+			<div class="news">
+				<div class="news_inner">
+					<ul id="news">
+						<li class="box green">
+							<p class="gametime">1分钟前</p>
+							<p>h***per在 <span>钢铁侠</span></p>
+							<p><span>免费游戏</span>中赢得<span>￥754</span></p>
+						</li>
+						<li class="box pink">
+							<p class="gametime">4分钟前</p>
+							<p>h***per在 <span>钢铁侠</span></p>
+							<p><span>免费游戏</span>中赢得<span>￥754</span></p>
+						</li>
+						<li class="box green">
+							<p class="gametime">6分钟前</p>
+							<p>h***per在 <span>钢铁侠</span></p>
+							<p><span>免费游戏</span>中赢得<span>￥754</span></p>
+						</li>
+						<li class="box pink">
+							<p class="gametime">4分钟前</p>
+							<p>h***per在 <span>钢铁侠</span></p>
+							<p><span>免费游戏</span>中赢得<span>￥754</span></p>
+						</li>
+						<li class="box green">
+							<p class="gametime">6分钟前</p>
+							<p>h***per在 <span>钢铁侠</span></p>
+							<p><span>免费游戏</span>中赢得<span>￥754</span></p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/template" id="getTopgameHistory">
+		<% _(data).each(function (v, k) { %>
+			<li class="box green">
+				<p class="gametime"><%= formatTime(v.get('bettime'), 2) %></p>
+				<p><%=v.get('username')%>在 <span><%=v.get('gametype')%></span></p>
+				<p><span>免费游戏</span>中赢得<span>￥<%=v.get('netamount')%></span></p>
+			</li>
+		<% }) %>
+	</script>
+@@include("./layout/footer.html")	
+<script src="@@{jspath}/static/scripts/jquery.kxbdMarquee.js"></script>
+<script type="text/javascript" src="@@{jspath}/static/scripts/trygame.js"></script>
+</body>
+</html>

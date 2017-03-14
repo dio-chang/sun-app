@@ -1,0 +1,36 @@
+extends layout
+block header
+    +header("注册成功")
+block append header
+    link(rel="stylesheet" href=`${csspath}/static/styles/register_success.css`)
+        
+        
+block body-middle
+    div.section_bg
+        section.notice.index-notice
+            .container
+                .notice-list
+                    ul.list-unstyled.noticeList
+        script#tpl(type='text/template').
+            <% _(data).each(function (v, k) { %>
+            <li class="noticeTit" data-content="<%=v.get('content')%>">
+            <a href="javascript:void(0)">
+            <%=v.get( 'title')%>
+            </a>
+            </li>
+            <% }) %>
+        script(type='text/javascript').
+            window.onload = function() {
+            getNotice()
+            }
+        section.register_success
+            div.register_success_bg
+                h4
+                    img(src=`${imgpath}/static/images/register_success_text_1.png`)
+                    div.name qwertyqq
+                    img(src=`${imgpath}/static/images/register_success_text_2.png`)
+                div.row
+                    a.bind(href="#bind")
+                    a.pay(href="#pay")
+                    a.download(href="#download")
+            

@@ -1,0 +1,148 @@
+.banner{
+	width: 100%;
+	background: url(../images/successbanner.jpg) no-repeat top center;
+	height: 300px;
+}
+.banner_inner{
+	width: 1200px;
+	margin:auto;
+	text-align: center;
+}
+.banner_inner dt{
+	color: #f7f7f8;
+	font-size: 30px;
+	line-height: 50px;
+	font-family: "微软雅黑";
+	padding:72px 0px 4px 0px;
+	font-weight: normal;
+}
+.banner_inner dd{
+	color:#f7f7f8;
+	font-size: 13px;
+	line-height: 50px;
+	text-align: center;
+}
+.main{
+	background: #f7f7f8;
+}
+.main_inner{
+	width: 1200px;
+	margin:auto;
+	height: 644px;
+	position: relative;
+}
+.main_inner ul{
+
+}
+.main_inner ul li{
+	float: left;
+	border:1px solid #d9dee1;
+}
+.main_inner ul li dt{
+	text-align: center;
+}
+.main_inner ul li dl{
+	margin-bottom: 0px
+}
+.main_inner ul li dd{
+	text-align: center;
+}
+.main_inner ul .huikui{
+	width: 279px;
+	position: absolute;
+	left: 159px;
+	top: -70px;
+	background: #ecf2f7
+}
+.main_inner ul .chuanxin{
+	width: 318px;
+	position: absolute;
+	left: 437px;
+	top: -100px;
+	background: #fff;
+}
+.main_inner ul .usephone{
+	width: 279px;
+	position: absolute;
+	left: 754px;
+	top: -70px;
+	background: #ecf2f7
+}
+.main_inner ul li .num{
+	height: 201px;
+}
+.main_inner ul li .num dt{
+	color: #666666;
+	font-size: 20px;
+	margin-bottom: -6px;
+	margin-top: 6px;
+}
+.main_inner ul li .num dt span{
+	font-size: 79px;
+	font-weight: normal;
+}
+.main_inner ul li .middle{
+	color: #999;
+	font-size: 12px;
+	height: 159px;
+	border-top: 1px solid #d9dee1;
+	border-bottom:1px solid #d9dee1;
+}
+.main_inner ul li .middle p{
+	padding: 0px 30px;
+	margin-top: 22px;
+}
+.main_inner ul li .middle h4{
+	color: #666666;
+	font-size: 14px;
+	padding: 14px 0px 0px 30px;
+}
+.main_inner ul li .bottom{
+	height: 269px;
+}
+.button{
+	margin-top: 6px
+}
+.main_inner ul li dd{
+	color: #666;
+	font-size: 14px;
+	line-height: 33px;
+}
+.main_inner ul li dd .btn{
+	width: 60%;
+	border:1px solid #e0e3e6;
+	border-radius: 3px;
+	line-height: 23px;
+}
+.main_inner ul li .bottom dt{
+	color: #333333;
+	font-size: 20px; 
+	padding-top: 15px;
+	font-weight: normal;
+}
+.main_inner ul li dd a{
+	color:#429bd1;
+}
+.main_inner ul .chuanxin dd a{
+	color: #fff;
+}
+.main_inner ul li .bottom dd{
+	color: #999999;
+	font-size: 13px;
+	line-height: 18px;
+}
+.main_inner ul li .bottom .firstbg{
+	margin-top: 14px;
+	height: 140px;
+	background: url(../images/success_icon.png) no-repeat 70px 0px;
+}
+.main_inner ul li .bottom .secendbg{
+	margin-top: 23px;
+	height: 140px;
+	background: url(../images/success_icon.png) no-repeat 100px -142px;
+}
+.main_inner ul li .bottom .thirdbg{
+	margin-top: 40px;
+	height: 140px;
+	background: url(../images/success_icon.png) no-repeat 70px -290px;
+}

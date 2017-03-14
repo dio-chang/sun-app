@@ -1,0 +1,284 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none
+}
+a{
+	text-decoration: none
+}
+h3{
+	margin:0;
+}
+.header{
+	width: 100%;
+	height: 58px;
+	background-color: #f5f5f5
+}
+.header_inner{
+	width: 1200px;
+	margin:0 auto;
+}
+.logo{
+	width: 218px;
+	float: left;
+}
+.nav{
+	float: right 
+}
+.nav li{
+	float: left;
+	background:url(../images/border.png) no-repeat left center;
+}
+.nav li.lastLi a{
+	background: url(../images/border.png) no-repeat right center;
+}
+.nav li a{
+	display: block;
+	float: left;
+	padding: 0px 26px;
+	line-height: 58px;
+	color: #616161;
+	font-size: 14px;
+}
+.banner{
+	width: 100%;
+	height: 460px;
+	background: url(../images/loginbanner.jpg) no-repeat top center;
+}
+.main{
+	background: #f6f6f6
+}
+.expressLane{
+	width: 1200px;
+	margin: 0 auto;
+}
+.expressLane h3{
+	padding: 38px 0px 40px 0px;
+}
+.expressLane ul{
+	width: 100%;
+	float: left;
+}
+.expressLane ul li{
+	float: left;
+	width: 249px;
+	height: 94px;
+	margin-right: 68px;
+	background:url(../images/zhandian.png) no-repeat;
+}
+.expressLane ul li a{
+	position: relative;
+	display: block;
+	height: 94px;
+}
+.expressLane ul li a .text{
+	position: absolute;
+	right: 16px;
+	bottom: 18px;
+	color:#fff;
+	font-size: 14px;
+	display: none;
+}
+.expressLane ul .fast1{
+	background-position: 0px 0px;
+}
+.expressLane ul .fast1:hover{
+	background-position: 0 -94px;
+}
+.expressLane ul .fast2{
+	background-position:-250px 0px;
+}
+.expressLane ul .fast2:hover{
+	background-position:-250px -94px;
+}
+.expressLane ul .fast3{
+	background-position:-500px 0px;
+}
+.expressLane ul .fast3:hover{
+	background-position:-500px -94px;
+}
+.expressLane ul .fast4{
+	background-position:-750px 0px;
+}
+.expressLane ul .fast4:hover{
+	background-position:-750px -94px;
+}
+.expressLane ul .last{
+	margin-right: 0px;
+}
+.box1{
+	height: 302px;
+	background: url(../images/cesubg.png) no-repeat bottom center;
+}
+.box2{
+	background: url(../images/youshibg.png) no-repeat bottom center;
+}
+.box3{
+	height: 824px;
+	background: url(../images/aboutbg.png) no-repeat bottom center;
+}
+.advantage{
+	width: 1200px;
+	height: 742px;
+	margin: auto;
+}
+.advantage h3{
+	padding-top: 32px; 
+}
+.advantage ul{
+	position: relative;
+}
+.advantage ul li{
+	position: absolute;
+	width: 440px;
+	height: 638px
+}
+.advantage ul li dl{
+	padding-top:346px ;
+
+}
+.advantage ul li dl dd{
+	text-align: center;
+	color: #999999;
+	font-size: 15px;
+	line-height: 36px;
+}
+.advantage ul li.one dl{
+	padding-top: 366px;
+}
+.advantage ul li.one .zanzhu{
+	margin-left: 55px;
+	margin-top:36px;
+}
+.advantage ul li.one .zanzhu p{
+	float:left;
+	padding: 0 22px;
+}
+.advantage ul .two{
+	left: 31px;
+	top: 0px;
+	background:url(../images/two.png) no-repeat ;
+}
+.advantage ul .one{
+	left: 378px;
+	top: -19px;
+	background: url(../images/one.png) no-repeat;
+	z-index: 3
+}
+.advantage ul .three{
+	left: 738px;
+	top: 0px;
+	background: url(../images/three.png) no-repeat;
+}
+.aboutUs{
+	width: 1200px;
+	margin: auto
+}
+.aboutUs h3{
+	padding-bottom: 40px;
+}
+.establish{
+	width: 100%;
+	float: left;
+}
+.philosophy{
+	width: 100%;
+	float: left;
+}
+.cooperation{
+	width: 100%;
+	float: left;
+}
+
+.establishl{
+	float: left;
+	width: 344px;
+	
+}
+
+.establishr{
+	float: left;
+	width: 762px;
+	margin-left: 72px;
+	padding: 30px 0 36px 0;
+	
+}
+.establishr p{
+	color: #999999;
+	font-size:14px;
+	line-height: 40px
+}
+.establishr span{
+	color: #000000;
+	font-style: italic;
+}
+.philosophyl{
+	width: 800px;
+	float: left;
+	
+}
+.philosophyl h3{
+	padding: 38px 0px 10px 0px;
+}
+.philosophyl p{
+	line-height: 40px;
+	color: #999999;
+	font-size:14px;
+}
+.philosophyl span{
+	color: #000000;
+	font-style: italic;
+}
+.philosophyr{
+	width: 328px;
+	float: left;
+	margin-left: 20px
+}
+.cooperation h3{
+	padding: 6px 0px 10px 0px;
+}
+.cooperation p{
+	line-height: 40px;
+	color: #999999;
+	font-size:14px;
+}
+.cooperation p span{
+	color: #000000;
+	font-style: italic;
+}
+
+.parden{
+	width: 1200px;
+	margin: auto;
+	height: 150px;
+	background:url(../images/parden.png) no-repeat left center;
+
+}
+
+.footer-bar{padding-top:10px;height:110px;background:url(../images/footer_shadow.png) #6e6d71 repeat-x;font-size:12px;}
+.footer-bar,.footer-bar a{color:#999;color:rgba(255,255,255,.3);}
+.footer-bar a:hover{color:#aaa;color:rgba(255,255,255,.4);}
+.footer-item{padding-top:10px;background:url(../images/footer-item-bg.png) 95% no-repeat;}
+.footer-item.none-bg{background:none;}
+.footer-item>ul>li+li:before{content:"/";}
+.footer-item>ul{margin-left:0;}
+.footer-item>ul>li{padding-left:0;}
+.footer-item>ul>li>a{text-decoration:underline;}
+.footer-item>ul>li+li>a{padding-left:10px;}
+
+/* footer-bar sports */
+.sports-page .footer-bar{background:none;}
+.bds-jt-logo{width:80px;height:70px;display:block;background:url(../images/footer-sprite.png) 0 0;}
+.bds-jt-logo:hover,.footer-item:hover .bds-jt-logo{background-position:-80px 0;}
+.bds-jt-title{width:235px;height:30px;display:block;margin:10px 0 0px 80px;background:url(../images/footer-sprite.png) 0 -140px;}
+.bds-jt-title:hover,.footer-item:hover .bds-jt-title{background-position:0 -170px;}
+.htf-jt-logo{width:65px;height:70px;display:block;background:url(../images/footer-sprite.png) -160px 0;}
+.htf-jt-logo:hover,.footer-item:hover .htf-jt-logo{background-position:-240px 0;}
+.htf-jt-title{width:235px;height:30px;display:block;margin:10px 0 0px 64px;background:url(../images/footer-sprite.png) 0 -200px;}
+.htf-jt-title:hover,.footer-item:hover .htf-jt-title{background-position:0 -230px;}
+.live-jt-logo{width:21px;height:21px;display:inline-block;background:url(../images/footer-sprite.png) -309px 0;}
+.live-jt-logo:hover,.footer-item:hover .live-jt-logo{background-position:-309px -30px;}
+.live-jt-title{width:160px;height:21px;margin-left:5px;display:inline-block;background:url(../images/footer-sprite.png) 0 -80px;}
+.live-jt-title:hover,.footer-item:hover .live-jt-title{background-position:0 -110px;}

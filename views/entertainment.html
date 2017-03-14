@@ -1,0 +1,60 @@
+@@include("./layout/header-sun.html" , {
+tit:"真人" 
+})
+<link rel="stylesheet" type="text/css" href="@@{csspath}/static/styles/entertainment.css">
+<style>
+.index-notice {
+    margin-top: -35px !important;
+}
+
+</style>
+
+<section class="entertainment">
+    <div class="banner" style="background:url(@@{imgpath}/static/images/banner4-1.png) 50% 50% no-repeat; width: 100%; height: 316px">
+    </div>
+</section>
+@@include("./layout/noticeLayout.html")
+<section class="index-screen-01">
+    <div class="container">
+        <div class="row row-guttery-0">
+            <div class="index_l p2-left-box">
+                <div class="p2-item">
+                    <div class="p2-block p2-pt"><a href="#rule" class="rule"></a><a href="@@{views}game.html?d=api&c=game&m=entergame&pid=9&gametype=bal&gameTitle=PT%E5%A8%B1%E4%B9%90%E5%9F%8E" class="start"></a></div>
+                    <div class="p2-block p2-mg"><a href="#rule" class="rule"></a><a href="@@{views}game.html?d=api&c=game&m=entergame&pid=22&gametype=0&gameTitle=MG%E5%A8%B1%E4%B9%90%E5%9F%8E" class="start"></a></div>
+                </div>
+            </div>
+            <div class="index_m p2-center-box">
+                <div class="p2-item">
+                    <div class="p2-block p2-ag"><a href="#rule" class="rule"></a><a href="@@{views}game.html?d=api&c=game&m=entergame&pid=18&gametype=0&gameTitle=AG%E5%A8%B1%E4%B9%90%E5%9F%8E" class="start"></a></div>
+                    <div class="p2-block p2-bbin"><a href="#rule" class="rule"></a><a href="@@{RootUrl}?d=api&c=game&m=entergame&pid=23&gametype=1&gameTitle=BBIN%E5%A8%B1%E4%B9%90%E5%9F%8E" class="start"></a></div>
+                </div>
+            </div>
+            <div class="index_r p2-right-box">
+                <div class="p2-item">
+                    <div class="p2-block p2-experience"><img src="@@{imgpath}/static/images/p2_experience_banner.gif"/></div>
+                    <div class="p2-block p2-promotion">
+                        <div class="more"> <a href="#">
+                                更多優惠活動<i class="fa fa-caret-right"></i></a></div>
+                        <ul>
+                            <li> <a class="hover-anime">試玩遊戲</a></li>
+                            <li class="minor"> <a class="hover-anime">下載客戶端</a>
+                                <div class="date">2017/2/28</div>
+                            </li>
+                            <li class="minor"> <a class="hover-anime">開戶首存</a>
+                                <div class="date">2017/2/28</div>
+                            </li>
+                            <li class="minor"> <a class="hover-anime">開戶首存</a>
+                                <div class="date">2017/2/28</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@@include("./layout/footer-sun.html")	
+<script type="text/javascript" src="@@{jspath}/static/scripts/entertainment.js"></script>
+</body>
+</html>

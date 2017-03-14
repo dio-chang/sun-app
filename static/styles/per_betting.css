@@ -1,0 +1,163 @@
+select{
+	background-position: 96% center;
+}		
+body{
+	font-family:'microsoft yahei';
+}
+ul{
+	margin-bottom: 0px
+}
+.main_r{
+	padding-left: 0px;
+	padding-top: 10px;
+}
+.main_r h3{
+	padding: 24px 0 20px 40px;
+}
+.main_r h3 span{
+	color: #999;
+	font-size: 12px;
+	display: inline-block;
+	padding-left: 6px
+}
+em{
+font-style:normal;
+font-size:14px
+;}
+.form-group {
+position: relative;
+padding-right: 5px;
+
+}
+.search{
+	padding:0px 0px 8px 70px;
+}
+.search p{
+	float: left;
+	line-height: 27px;
+}
+.search p input{
+	float: left;
+	border:#c9d1d6 1px solid;
+	border-radius: 5px;
+	margin:0px 2px;
+}
+.search p select{
+	height: 27px;
+	line-height: 27px;
+	width: 152px;
+	border:#c9d1d6 1px solid;
+	border-radius: 5px;
+	margin-left:6px 
+}
+.chang{
+	width: 152px;
+	height: 27px;
+	line-height: 27px;
+}
+.duan{
+	width: 74px; 
+	height: 27px;
+	line-height: 27px;
+}
+.saveSearch{
+	height: 27px;
+	background:#207ce9;
+	border-radius: 4px;
+	width: 76px;
+	text-align: center;
+	line-height: 27px;
+	color: #fff;
+	margin-left: 9px;
+	cursor: pointer;
+}
+#select2{
+	cursor: pointer;
+}
+.list,.listtit{
+	width: 100%;
+	border-top: 1px solid #d3d3d3
+}
+.list{
+	border-top: 0px;
+}
+.list .nodata{
+	text-align: center;
+}
+.listtit li{
+	background:#f9faf9
+}
+.list li,.listtit li{
+	width: 100%;
+	line-height: 50px;
+	height: 50px;
+}
+.list .odd{
+	background:#f9faf9;
+}
+.list .even{
+	background:#fff;
+}
+.list li span,.listtit li span{
+	width: 25%;
+	float: left;
+	text-align: center;
+	font-size: 13px;
+}
+.list li span{
+	font-size: 12px;
+}
+.list li .shu,.listtit li .shu{
+	color: #aa0000
+}
+.list .pageList{
+	margin-left: 344px;
+	position: relative;
+}
+.list .pageList span,.list .pageList button{
+	font-size:14px;
+	width: 72px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border:1px solid #ddd;
+	background:#fff;
+	border-radius: 5px;
+	color: #79a8da;
+	margin-left: 6px;
+	display: block;
+	float: left;
+	cursor: pointer;
+}
+.list .pageList span input{
+	width: 72px;
+	border:none;
+	color: #333;
+	background:none;
+}
+.list .pageList span:hover,.list .pageList button:hover{
+	background:#eee;
+	color:#23527c
+}
+#datetimepicker1{cursor: pointer;}
+#datetimepicker2{cursor: pointer;}
+#datetimepicker3{
+	cursor: pointer;
+	background: url(../images/dataicon.png) no-repeat 124px 5px;
+}
+#datetimepicker4{
+	cursor: pointer;
+	background: url(../images/dataicon.png) no-repeat 124px 5px;
+}
+/*.pagetips{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	border-radius: 6px;
+	background:rgba(0,0,0,0.8);
+	color: #fff;
+	width: 250px;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+}*/

@@ -1,0 +1,15 @@
+body{
+	background:#000000;
+}
+.navbar-collapse{
+	margin: 0px;
+}
+.container{
+	margin-top: 0px;
+}
+.gameBox{
+	width: 1200px;
+	min-height: 600px;
+	background: #fff url(../images/uedloading.gif) no-repeat center;
+	margin: auto;
+}

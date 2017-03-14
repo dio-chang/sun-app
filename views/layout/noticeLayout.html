@@ -1,0 +1,22 @@
+<section class="notice index-notice">
+  <div class="container">
+    <div class="title hide">公告栏</div>
+    <div class="notice-list"> 
+      <ul class="list-unstyled noticeList">
+       
+      </ul>   
+    </div>
+  </div>
+</section>
+<script type="text/template" id="tpl">
+  <% _(data).each(function (v, k) { %>
+    <li class="noticeTit" data-content="<%=v.get('content')%>">
+      <a href="javascript:void(0)"><%=v.get('title')%></a>
+    </li>
+  <% }) %> 
+</script>  
+<script type="text/javascript">
+window.onload=function(){
+  getNotice()
+}
+</script>

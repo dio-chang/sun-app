@@ -1,0 +1,63 @@
+body{
+	background:url(../images/trygameBg.jpg) no-repeat center 90px;
+}
+.container{margin-top:-1px;}
+.footer-bar{background: none;}
+.navbar-collapse{
+	margin: 0px;
+}
+.gameBox{
+	width: 1200px;
+	min-height: 600px;	
+	margin: auto;
+	position: relative;
+}
+.gameright{
+	width: 196px;
+	height: 650px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background: url(../images/trygamerbg.png) no-repeat;
+}
+.gameright dl dt{
+	text-align: center;
+	margin: 18px 0px 12px 0px
+}
+.gameright dl dd a{
+	height: 47px;
+	line-height: 47px;
+	width: 161px;
+	display: block;
+	background: url(../images/tryButton.png) no-repeat;
+	margin-left: 18px;
+	text-align: center;
+	color:#fff;
+	font-size: 16px;
+}
+
+.news_inner ul{
+	margin-left: 27px;
+
+}
+.news_inner li{
+	float:left; 
+	width: 168px
+}
+.news_inner{
+	height: 462px;
+	position: absolute;
+	overflow: hidden;
+}
+.box{
+	margin-top: 28px;
+	line-height: 24px;
+}
+.box p{
+	color: #9acfff;
+	font-size: 13px;
+}
+.box p span{
+	color: #ffffff;
+	font-size: 13px;
+}

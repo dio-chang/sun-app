@@ -1,0 +1,158 @@
+.main{
+	width:100%;
+	background-color: #187aa5;
+    background-image: linear-gradient(-225deg,#162774,#0ea7ad);
+    height:700px;
+}
+.yuan{
+	position:absolute;
+	left: 50%;
+	top: 50%
+}
+.focus-slide>.slide-inner li{
+	min-height: 700px;
+}
+.focus-slide>.slide-inner li .yuan img{
+	width: 100%
+}
+.focus-slide>.slide-inner li .shuzi img{
+	width: 100%
+}
+.focus-slide>.slide-inner li .marginT img{
+	padding-top: 68px;
+}
+.focus-slide>.slide-inner li .lotter img{
+	padding:68px 128px 0 128px;
+}
+
+.yuan2{
+	width: 287px;
+	height: 287px;
+	margin-left: -143px;
+	margin-top: -129px;
+}
+.yuan1{
+	width: 221px;
+	height: 221px;
+	margin-left: -110px;
+	margin-top: -99px
+}
+.shuzi{
+	width: 119px;
+	height: 85px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -59px;
+	margin-top: -42px;
+}
+.yuan2{
+	-webkit-animation-duration: 5000ms;
+	animation-duration: 5000ms;
+	-webkit-animation-name: round2;
+	animation-name: round2;
+	animation-iteration-count:infinite;
+	animation-timing-function: linear;
+	
+}
+@-webkit-keyframes round2 {
+    from { -webkit-transform: rotate(0); }
+    to { -webkit-transform: rotate(-360deg); }
+}
+@keyframes round2 {
+    from { transform: rotate(0); }
+    to {transform: rotate(-360deg); }
+}
+.yuan1{
+	-webkit-animation-duration: 5000ms;
+	animation-duration: 5000ms;
+	-webkit-animation-name: round;
+	animation-name: round;
+	animation-iteration-count:infinite;
+	animation-timing-function: linear;
+	
+}
+@-webkit-keyframes round {
+    from { -webkit-transform: rotate(0); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes round {
+    from { -webkit-transform: rotate(0); }
+    to { -webkit-transform: rotate(360deg); }
+}
+.smarrow{
+	width: 32px;
+	height: 34px;
+	background: url(../images/arrowsm.png) no-repeat;
+	position: absolute;
+	left: 40%;
+	top: 50%;
+	margin-top: -12px;
+}
+.smarrowr{
+	left:57%;
+	top: 50.5%;
+	background-position:-42px 0px;
+	-webkit-animation-duration: 1500ms;
+	animation-duration: 1500ms;
+	-webkit-animation-name: goR;
+	animation-name: goR;
+	animation-iteration-count:infinite;
+	animation-timing-function: linear; 
+}
+.smarrowl{
+	-webkit-animation-duration: 1500ms;
+	animation-duration: 1500ms;
+	-webkit-animation-name: goL;
+	animation-name: goL;
+	animation-iteration-count:infinite;
+	animation-timing-function: linear;
+}
+@-webkit-keyframes goL {
+    0% { left: 40%;opacity:1;}
+    50% { left: 39%;opacity:0.5;}
+    100%{left: 40%;opacity: 0}
+}
+@keyframes goL {
+    0% { left: 40%;opacity:1;}
+    50% { left: 39%;opacity:0.5;}
+    100%{left: 40%;opacity: 0}
+}
+@-webkit-keyframes goR {
+    0% { left: 57%;opacity:1;}
+    50% { left: 58.5%;opacity:0.5;}
+    100%{left: 57%;opacity: 0}
+}
+@keyframes goR {
+    0% { left: 57%;opacity:1;}
+    50% { left: 58.5%;opacity:0.5;}
+    100%{left: 57%;opacity: 0}
+}
+.lotterytime{
+	position: absolute;
+	top: 28%;
+	left: 50%;
+	font-size: 80px;
+	color: #abcfdb;
+	font-family: Arial;
+}
+.lotterytime span{
+	float: left;
+	font-size: 80px;
+	/*width: 90px;*/
+
+}
+.focus-slide>.slide-inner li .item-btn{
+	bottom: 20px
+}
+.focus-slide>.pnBtn .arrow{
+	top:26px;
+}
+.floatr{
+	width: 57px;
+	position: fixed;
+	top: 40%;
+	left: 50%;
+	margin-left: 610px;
+
+}

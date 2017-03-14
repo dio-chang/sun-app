@@ -1,0 +1,73 @@
+@@include("./layout/header-sun.html" , {
+tit:"用户注册",
+})
+@@include("./layout/noticeLayout.html")
+<section class="register">
+    <div class="container">
+        <form id="regForm" method="post" class="form-horizontal" novalidate="novalidate">
+            <div class="register-box">
+                <fieldset>
+                    <legend>
+                        <div class="title"></div>
+                        <span>．太阳城有菲律宾丶曼岛丶澳门特别行政区营业执照</span> <span>．从2007年至今积累的10年信誉，已有50000000人选择太阳城，已超过1650000个500万VIP级客户选择太阳城</span> <span>．太阳城有实力敢承诺，资金安全，客户时年零投诉.</span> <span class="hasnumber">立刻注册太阳城账户，领略前所未有的博彩体验。如果您已拥有UEDBET账户，则可直接<a href="#username">登录</a></span>
+                    </legend>
+                    <input value="" type="hidden" name="sysUser.passwordLevel"> <input name="recommendRegisterCode" id="recommendRegisterCode" type="hidden"> <input type="hidden" name="loginUrl" value="/?do=loginDialog"> <input type="hidden" name="editType" value="player">
+                    <div style="display:none" id="validateRule"></div>
+                    <input type="hidden" value="[&quot;username&quot;,&quot;password&quot;,&quot;verificationCode&quot;,&quot;realName&quot;,&quot;securityIssues&quot;]" name="requiredJson">
+                </fieldset>
+
+            </div>
+            <div class="frame">
+                <h4>注册</h4>
+                <div class="form-group" id="recommendBox">
+                    <label for="inputPassword" class="col-12-3 control-label">介绍人</label>
+                    <div class="col-12-6"> <input type="text" class="form-control pid" name="recommendUserInputCode" placeholder="请输入介绍人账户名"></div>
+                </div>
+                <div class="form-group">
+                    <label for="sysUser.username" class="col-12-3 control-label">用户名 <span class="text-danger">*</span></label>
+                    <div class="col-12-6">
+                        <input type="text" class="form-control username" name="sysUser.username" maxlength="15" placeholder="请输入6-10位数字与小写字母的组合">
+                        <lable class="error"></lable>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="sysUser.password" class="col-12-3 control-label">登录密码 <span class="text-danger">*</span></label>
+                    <div class="col-12-6">
+                        <input type="password" class="form-control noCp password" name="sysUser.password" maxlength="20" placeholder="6到12位数字与小写字母的组合">
+                        <div class="progress pass-strength m-t-sm _password_level">
+                            <div class="progress-bar" password-level="none"></div>
+                            <div class="progress-bar" style="width: 20%;display: none;" password-level="1">弱</div>
+                            <div class="progress-bar progress-bar-success" style="width: 75%;display: none;" password-level="2">强</div>
+                            <div class="progress-bar progress-bar-success" style="width: 100%;display: none;" password-level="3">非常强</div>
+                        </div>
+                        <lable class="error"></lable>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword" class="col-12-3 control-label">密码确认 <span class="text-danger">*</span></label>
+                    <div class="col-12-6">
+                        <input type="password" class="passwordcheck form-control noCp" name="confirmPassword" maxlength="20" placeholder="再次输入密码">
+                        <lable class="error"></lable>
+                    </div>
+                </div>
+                <div class="form-group yanzheng">
+                    <label for="inputPassword" class="col-12-3 control-label">验证码</label>
+                    <div class="col-12-4"> <input type="text" class="form-control captcha" placeholder="验证码" name="captchaCode" maxlength="4"></div>
+                    <div class="col-12-2"><img class="_vr_captcha_code" data-code="ppcregister" src=""></div>
+                    <lable class="error"></lable>
+                </div>
+                <input type="hidden" value="12321" name="termsOfService">
+                <div class="form-group">
+                    <label for="inputPassword" class="col-12-1 col-offset-12-3 control-label"></label>
+                    <div class="col-12-3"> <button type="button" class="btn btn-primary btn-block registerBtn" name="registerBtn">立即开户</button></div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</section>
+@@include("./layout/footer-sun.html")
+<script src="@@{jspath}/static/scripts/jquery.validate.extend.msites.js"></script>
+<script src="@@{jspath}/static/scripts/register.js"></script>
+</body>
+</html>

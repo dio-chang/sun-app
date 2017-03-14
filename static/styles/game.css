@@ -1,0 +1,155 @@
+.banner{
+	width:100%; 
+	background: url(../images/gamebanner.jpg) no-repeat top center; 
+	height: 236px;
+}
+.main{
+	width: 100%;
+	background: #fafafa;
+
+}
+.main_inner{
+	width: 1168px;
+	margin: auto;
+	padding:0px 16px;
+}
+.lisTab{
+	height: 30px;
+	margin-top: 42px;
+}
+.lisTab li{
+	width: 49.8%;
+	float: left;
+	height: 30px;
+	background: #7d7d7d;
+}
+.marg{
+	margin-right: 0.4%
+}
+.lisTab li.active{
+	background: #00528a
+}
+.lisTab li p{
+	float: left;
+	color: #fff;
+	line-height: 30px;
+	text-indent: 10px;
+}
+.happylottery{
+	background: #fff;
+	
+}
+.search{
+	padding:38px 0px 24px 76px;
+}
+.search dt{
+	color: #00528a
+}
+.search dt p{
+	float: left;
+	line-height: 24px;
+}
+.search dt .ch{
+	font-size: 18px;
+	padding-right: 10px;
+}
+.search dt .en{
+	font-size: 14px;
+}
+.search input{
+	display: block;
+	float: left;
+}
+.inputxt{
+	border:1px solid #d3d3d3;
+	background: #fafafa;
+	height:28px;
+	line-height:28px;
+	width: 288px;
+}
+.confirm{
+	border:none;
+	width: 50px;
+	height: 30px;
+	background: #0074ba url(../images/search.png) no-repeat center
+}
+table{
+	margin-top: 24px;
+	margin-left: 76px;
+}
+th{
+	height: 40px;
+	line-height: 40px;
+	background: #0074ba;
+	color: #fff;
+	font-size: 14px;
+}
+.bai{
+	background: #fff
+}
+td{ 
+	height: 30px; 
+	line-height: 30px;
+
+}
+.even{
+	background: #fff
+}
+.odd{
+	background: #edfdff
+}
+.listBox{
+	display: none;
+	min-height:900px;
+	background: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2)
+}
+.show{
+	display: block
+}
+.shuoming{
+	width: 100%;
+	background: #fff;
+	margin-top: 106px;
+	padding: 46px 0 126px 0
+}
+.shuo_inner{
+	width: 1200px; 
+	margin: auto;
+}
+.shuo_inner dl{
+	padding-left: 90px;
+}
+.shuo_inner .shuobto{
+	padding:42px 0 0 90px;
+	color: #7d7d7d;
+	font-size: 14px;
+}
+.shuo_inner dt{
+	color: #00528a
+}
+.shuo_inner dt p{
+	float: left;
+	vertical-align: bottom;
+	height: 24px;
+	line-height: 24px;
+}
+.shuo_inner dt .ch{
+	font-size: 18px;
+	padding-right: 10px
+}
+.shuo_inner dd{
+	color: #7d7d7d;
+	font-size: 14px;
+	line-height: 38px;
+	clear: both;
+}
+.winList td,.winList1 td{
+	text-align: center
+}
+.winList p,.winList1 p{ 
+	text-align: center;
+	padding: 120px;
+	font-size: 16px;
+	color: #f00
+ }

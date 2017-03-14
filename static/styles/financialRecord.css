@@ -1,0 +1,257 @@
+.navbar{
+	margin-bottom: 0px;
+}
+.main_b{
+	margin-bottom: 46px;
+}
+.qian{
+	width: 100%;
+	height: 88px;
+	float: left;
+	border-left: 1px solid #d3d3d3;
+	border-right: 1px solid #d3d3d3;
+	margin: 0;
+	background: url(../images/bordert.png) no-repeat top left;
+}
+.qian li{
+	float: left;
+	width: 149px;
+	background:url(../images/border_r.png) no-repeat right center;
+}
+.qian li h4{
+	text-align: center;
+	padding-top: 16px;
+	color:#0088ff;
+	font-size: 22px;
+}
+.qian li h4 img{
+	width: 20px;
+}
+.qian li p{
+	text-align: center;
+	color: #999999;
+	font-size: 12px;
+}
+
+.biaodan{
+	border:2px solid #93bdee;
+	background:#fff;
+}
+.biaodanl{
+	margin: 68px 0px 114px 0px;
+	border-right:1px solid #d5d5d5;
+	float: left;
+	width: 50%;
+	background:url(../images/exborder.png) no-repeat 454px 16px ;
+	position: relative;
+}
+.biaodanl p{
+	padding-left: 150px;
+	margin-bottom:15px;
+}
+.biaodanl p span{
+	float: left;
+	color: #333333;
+	font-size: 14px;
+	line-height: 35px;
+}
+.biaodanl p select{
+	float:left; 
+	width: 250px;
+	height: 33px;
+	border:1px solid #c9d1d6;
+	border-radius: 1px;
+	/*background:#fff;*/
+	background-position:98% center
+}
+.biaodanl p input{
+	background:#fff;
+	width: 250px;
+	height: 33px;
+	border:1px solid #c9d1d6;
+	border-radius: 1px;
+}
+.biaodanl .transfer{
+	width: 152px;
+	height: 34px;
+	line-height: 35px;
+	text-align: center;
+	border-bottom:1px solid #185cac;
+	color: #fff;
+	background:#207eec;
+	padding:0px;
+	margin:40px 0px 0px 193px;
+	font-size: 13px;
+	cursor: pointer;
+
+}
+.biaodanl .out{
+	position:absolute;
+	top: 0px
+}
+.biaodanl .into{
+	position: absolute;
+	top: 50px;
+}
+.biaodanl .amount{
+	margin-top: 100px
+}
+.biaodanl .exchange{
+	position:absolute;
+	left: 462px;
+	top: 33px;
+	width: 18px; 
+	height: 18px;
+	background:#f5f5f5;
+	border:1px solid #d9d9d9;
+	margin: 0;
+	padding: 0px;
+	cursor:pointer;
+}
+.biaodanl .exchange img{
+	float: left;
+	margin: 2px;
+}
+.biaodanr{
+	width: 50%;
+	float: left;
+}
+.biaodanr h4{
+	padding-left: 136px;
+	margin: 30px 0px 20px 0px;
+	color: #999999;
+	font-size: 14px;
+}
+.biaodanr h4 span{
+	color: #0088ff;
+}
+.biaodanr li{
+	padding-left: 136px;
+	background:url(../images/youhuibg.png) no-repeat 100px -60px;
+}
+.biaodanr .active{
+	background:url(../images/youhuibg.png) no-repeat 100px 0px;
+}
+.biaodanr li dl{
+	width: 322px;
+	height: 88px;
+	background:url(../images/youhuibg.png) no-repeat -36px 0px;
+}
+.biaodanr li dl dd{
+	clear: both;
+}
+.biaodanr li dl span{
+	float: left;
+}
+.biaodanr li dl .couname{
+	padding-top: 18px;
+	color: #333;
+	font-size:14px;
+	padding:18px 0px 16px 26px;
+}
+.biaodanr li dl .coutime{
+	padding-top: 18px;
+	color: #cccccc;
+	font-size: 12px;
+	float: right;
+	margin-right: 30px;
+}
+.biaodanr li dl a{
+	float: left;
+}
+.biaodanr li dl .faceValue{
+	color: #0088ff;
+	font-size:18px;
+	font-family: Arial;
+	color:#0088ff;
+	padding-left: 60px;
+}
+.biaodanr li dl a{
+	float: right;
+	color: #0088ff;
+	font-size: 14px;
+	margin-right: 30px;
+	text-decoration: underline;
+}
+.biaodanr dl{
+	padding-top: 130px
+}
+.biaodanr dt{
+	text-align: center;
+}
+.biaodanr dd{
+	text-align: center;
+	color: #999999;
+	font-size: 14px;
+}
+.amount .error{
+	color: #f00;
+	font-size: 12px;
+	padding-left: 42px;
+}
+.transferpob{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 365px;
+	height: 200px;
+	margin-top:-100px;
+	margin-left: -182px; 
+	display: none;
+	z-index: 17;
+	background:#fff;
+}
+.transferpob h3{
+	margin: 0px
+} 
+.transferpob h3 p{
+	float: left;
+	color: #0088ff;
+	font-size:20px;
+	padding: 15px;
+	margin: 0px
+}
+.transferpob h3 span{
+	float: right;
+	color: #aaaaaa;
+	margin:16px 0px 0px 13px;
+	display: block;
+}
+.transferpob .finpassword{
+	height: 28px;
+	line-height:28px;
+	font-size:12px;
+	width: 200px
+}
+.transfercomfir{
+	text-align: center;
+}
+.transferpob a{
+	display: block;
+	height: 28px;
+	width: 120px;
+	border-bottom:1px solid #185cac;
+	border-radius: 2px;
+	background:#207be8;
+	margin: 18px 0px 0px 126px;
+	text-align: center;
+	color: #fff;
+	line-height: 28px;
+}
+.transferpob .wait{
+	color:#fff;
+	background: #c6c6c6;
+	border-bottom:1px solid #c6c6c9;
+	cursor: wait;
+}
+.passwordbox{
+	text-align: center;
+}
+.perror{
+	text-align: center;
+	color: #f00;
+	font-size: 12px;
+	line-height: 16px;
+	height: 16px;
+}
+

@@ -1,0 +1,66 @@
+@@include("./layout/header.html" , { 
+      tit:"彩票",
+})
+<link rel="stylesheet" type="text/css" href="@@{csspath}/static/styles/lottery.css">
+@@include("./layout/noticeLayout.html")
+<main>
+<section class="lottery">
+	<div class="focus-slide">
+		<div class="slide-inner">
+			<div class="tempWrap">
+				<ul class="list-unstyled bannerbox">
+					<li>
+						<a class="_vr_mt_check lotter" target="_blank" href="@@{RootUrl}?d=api&c=game&m=entergame&pid=23&gametype=0" data-api="11" data-apitype="4">
+						<img src="@@{imgpath}/static/images/lottery-ban-01.png"></a>
+						<div class="item-btn">
+							<a class="_vr_mt_check" target="_blank" href="@@{RootUrl}?d=api&c=game&m=entergame&pid=23&gametype=0" data-api="11" data-apitype="4">
+						进入游戏</a>
+						</div>
+					</li>
+					<li>
+						<a class="_vr_mt_check marginT" target="_blank" href="@@{RootUrl}?d=api&c=game&m=entergame&pid=23&gametype=0" data-api="2" data-apitype="4" starttime="1472947200000" endtime="1472947200000">
+							<img src="@@{imgpath}/static/images/lottery-ban-02.png">
+						</a>
+						<div class="lotterytime">
+							<span class="shi"></span><span>:</span><span class="fen"></span> 
+						</div>
+						<div class="clear"></div>
+						<div class="item-btn">
+							<a class="_vr_mt_check" target="_blank" href="@@{RootUrl}?d=api&c=game&m=entergame&pid=23&gametype=0" data-api="2" data-apitype="4" starttime="1472947200000" endtime="1472947200000">
+						进入游戏</a>
+						</div>
+					</li>
+					<li>
+						<a class="_vr_mt_check" target="_blank" href="@@{RootUrl}?d=api&c=game&m=entergame&pid=23&gametype=0" data-api="10" data-apitype="4" starttime="1473811200000" endtime="1473811200000">
+						<img src="@@{imgpath}/static/images/lottery-ban-03.png"></a>
+						<p class="yuan1 yuan"><img src="@@{imgpath}/static/images/smyuan.png"></p>
+						<p class="yuan2 yuan"><img src="@@{imgpath}/static/images/smyuan1.png"></p>
+						<p class="smarrow smarrowl"></p>
+						<p class="smarrow smarrowr"></p>
+						<p class="shuzi"><img src="@@{imgpath}/static/images/lettery6.png"></p>
+						<div class="item-btn">
+							<a class="_vr_mt_check" target="_blank" href="@@{RootUrl}?d=api&c=game&m=entergame&pid=23&gametype=0" data-api="10" data-apitype="4" starttime="1473811200000" endtime="1473811200000">
+						进入游戏</a>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+		<div class="slide-indicators">
+			<ul class="list-unstyled"><li class="">1</li><li class="">2</li><li class="active">3</li></ul>
+		</div>
+		<div class="pnBtn prev"> <span class="blackBg"></span>
+			<a class="arrow" href="javascript:void(0)" style="display: none;"></a>
+		</div>
+		<div class="pnBtn next"> <span class="blackBg"></span>
+			<a class="arrow" href="javascript:void(0)" style="display: none;"></a>
+		</div>
+	</div>
+</section>
+</main>
+@@include("./layout/footer.html")
+<script src="@@{jspath}/static/scripts/jquery.super-marquee.js"></script>
+<script type="text/javascript" src="@@{jspath}/static/scripts/lottery.js"></script>
+</body>
+</html>

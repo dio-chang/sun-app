@@ -1,0 +1,37 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+body { background:#fff; color:#555;}
+td,th,caption { font-size:14px; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+a { color:#555; text-decoration:none; }
+a:hover {}
+img { border:none; } 
+ol,ul,li { list-style:none; }
+input, textarea, select, button { font:14px; }
+table { border-collapse:collapse; }
+html {overflow-y: scroll; font-size: 10px;font-family: Verdana, Arial, Helvetica, sans-serif; } 
+
+
+/* css common */
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; clear: both;}
+.err{
+	display: block;
+	text-align: center;
+	color: #f00;
+	font-size: 1.2rem;
+	height: 1.4rem;
+	line-height: 1.4rem;
+}
+.btn{
+	float: none;
+	width: 80%;
+	margin-left:10%;
+	background:url(../../images/mobile/registerBtn.png) repeat-x;
+	height: 3.9rem;
+	line-height: 3.9rem;
+	background-size: 50%;
+	text-align: center;
+	color: #fff;
+	font-size: 1.4rem;
+}

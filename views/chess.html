@@ -1,0 +1,32 @@
+@@include("./layout/header.html" , {
+      tit:"棋牌",
+}) 
+@@include("./layout/noticeLayout.html")
+	<link rel="stylesheet" type="text/css" href="@@{csspath}/static/styles/chess.css">
+	<div class="main">
+		<div class="main_inner">
+			<div class="right_bar">
+				<div class="chessh1"><img src="@@{imgpath}/static/images/chessH1.png"></div>
+				<div class="fanshui"><a href="@@{views}promo.html">进入优惠活动</a></div>
+				<div class="wen"><img src="@@{imgpath}/static/images/chesswen.png"></div>
+			</div>
+			<div class="absolute bigfish bigfishr"><p class="tips"><a href="@@{views}game.html?type=ag"></a></p></div>
+			<div class="absolute diandian"><img src="@@{imgpath}/static/images/diandian.png"></div>
+			<div class="absolute shark"><img src="@@{imgpath}/static/images/shark.png"></div>
+			<div class="absolute bluefish"><img src="@@{imgpath}/static/images/bluefish.png"></div>
+			<div class="absolute littlefish"><img src="@@{imgpath}/static/images/littlefish.png"></div>
+			<div class="absolute redfish"><img src="@@{imgpath}/static/images/redfish.png"></div>
+			<div class="absolute boguang"><img src="@@{imgpath}/static/images/linght.png"></div>
+			<div class="absolute boguang1"><img src="@@{imgpath}/static/images/linght.png"></div>
+			<div class="bobo"></div> 
+			<div class="absolute lang1"><img src="@@{imgpath}/static/images/lang1.png"></div>
+			<div class="absolute lang"><img src="@@{imgpath}/static/images/lang.png"></div>
+			
+		</div>
+		<div class="absolute lang2"></div>
+		<div class="absolute lang3"></div>	
+	</div>
+@@include("./layout/footer.html") 	
+<script type="text/javascript" src="@@{jspath}/static/scripts/chess.js"></script>
+</body>
+</html>

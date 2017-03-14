@@ -1,0 +1,100 @@
+.navTop{
+	background-image: linear-gradient(-225deg,#227eed,#54d4fb);
+	height: 4.5rem;
+	line-height: 4.5rem;
+	position: relative;
+}
+.navTop p{
+	text-align: center;
+	color: #fff;
+	font-size: 1.7rem; 
+	width: 100%;
+	height: 4.5rem;
+	line-height: 4.5rem;
+}
+.navTop i{
+	position: absolute;
+	top:0.9rem;
+	left: 2%;
+	display: block;
+	width: 2.8rem;
+	height: 2.8rem;
+	background:url(../../images/mobile/returnIcon.png) no-repeat center;
+	background-size: 100%
+}
+.form{}
+.form .formBox{
+	height: 4.4rem;
+	border-bottom: 1px solid #c7c7cc;
+	margin-left: 5%;
+	float:none;
+}
+.form .formBox span{
+	float: left;
+	width: 20%;
+	height: 4.4rem;
+	line-height: 4.4rem;
+	font-size: 1.4rem;
+}
+.form .formBox input{
+	float: left;
+	width: 80%;
+	border: none;
+	height: 4.4rem;
+	line-height:4.4rem;
+	font-size: 1.4rem;
+}
+.form .codeBox input{
+	width: 50%
+}
+.form .codeBox img{
+	margin-top:0.5rem;
+	float: left;
+	height:3.5rem;
+	width: 28%;
+	margin-right: 2%
+}
+
+.agree{
+	margin-left: 8%;
+	height: 2.2rem;
+	margin:2.6rem 0px 2.6rem 8%;
+}
+.agree i{
+	width:2.2rem;
+	height: 2.2rem;
+	background:url(../../images/mobile/uncheck.png) no-repeat; 
+	background-size: 100%;
+	display: block;
+	float: left;
+	margin-right: 1.2rem;
+}
+.agree .check{
+	background: url(../../images/mobile/check.png) no-repeat;
+	background-size: 100%;
+}
+.agree span{
+	float: left;
+	color: #000;
+	font-size: 1.4rem;
+	line-height: 2.2rem;
+}
+
+.yesNumber{
+	color: #fff;
+	margin-top: 8rem;
+}
+.yesNumber hr{
+	width: 10%;
+	float: left;
+}
+.yesNumber p{
+	width: 60%;
+	float: left;
+	text-align: center;
+	color: #424242
+}
+.yesNumber p a{
+	color: #424242;
+	text-decoration: underline;
+}

@@ -1,0 +1,12 @@
+.centerTop{
+	height:9.4rem;
+	background: url(../../images/mobile/personalBg.png) no-repeat;
+}
+.centerTop .ctl{
+	float: left;
+	width: 25%;
+}
+.centerTop .ctr{
+	float: left;
+	width: 75%;
+}

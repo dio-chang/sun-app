@@ -1,0 +1,89 @@
+.main_r h3 {float: left;padding: 24px 0 20px 0px; margin-bottom: 0px;}
+.main_r h3 p{
+	float: left;
+	color: #333
+}
+.main_r h3 span{
+	float: left;
+	font-size:12px;
+	color: #999999;
+	line-height: 35px;
+	padding-left: 14px;
+}
+.couponList{
+
+}
+.couponList li{
+	background:url(../images/couponBg.png) no-repeat;
+}
+.couponNum{
+	color: #333333;
+	font-size: 14px;
+	padding-bottom: 0px;
+}
+.couponNum span{
+	color: #0088ff;
+	font-size: 30px;
+}
+.couponList .cl{
+	float: left;
+	width: 450px;
+}
+.cl h4{
+	padding-left: 25px;
+	margin:15px 0;
+	color: #333333
+}
+.na p{
+	float: left;
+}
+.num{
+	float: left;
+	width: 146px;
+	text-indent: 80px;
+	color: #0088ff;
+	font-size: 18px;
+}
+.collect{
+	float: left;
+	color: #0088ff;
+	margin-left: 36px;
+	font-size: 14px;
+	text-decoration: underline;
+}
+.couponList li{
+	margin-bottom: 10px;
+}
+.couponList .cr{
+	float: left;
+	width: 422px;
+	padding-left: 22px;
+}
+.couponList .cl h4{
+	color: #333333;
+	font-size: 14px;
+}
+.cr span{
+	color: #cccccc;
+	font-size: 12px;
+	float: left;
+}
+.cr .crL{
+	width: 164px;
+	text-align: left;
+}
+.cr .crR{
+	padding-left: 38px;
+}
+.nameTime{
+	padding-top: 10px;
+}
+.coupontips{
+	font-size: 12px;
+}
+.coupontype{ 
+	font-size: 12px;
+	text-indent: 322px; 
+	color: #666;
+	margin-bottom: 15px;
+}

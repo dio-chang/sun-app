@@ -1,0 +1,355 @@
+#bank_name{
+	background-position: 97% center
+}
+.main_b{
+	padding:10px 0px 24px 0px;
+	background: #f9fafd;
+	border-right: 1px solid #d3d3d3;
+	border-left: 1px solid #d3d3d3;
+	background: url(../images/bordert.png) no-repeat top left;
+}
+.schedule{
+	float: left;	
+	margin-top: 8px;
+}
+.schedule li{
+	float: left;
+	color: #666666;
+	font-size: 12px;
+}
+.schedule1{
+	padding:0px 208px 0px 234px;
+}
+.schedule2{padding-right:208px}
+.schedule3{padding-right:208px;}
+.schedule li.add{
+	color: #98c2f3;
+}
+.progressBar{
+	margin-left: 238px;
+	background: url(../images/findpasswordbg.png) no-repeat;
+	height: 16px;
+}
+.progressBar.oneStep{
+	background-position:0px -16px;  
+}
+.progressBar.twoStep{
+	background-position:0px -16px;  
+}
+.progressBar.threeStep{
+	background-position:0px -16px;  
+}
+.amount{
+	padding:66px 0px 0px 300px
+}
+.amount span{
+	float: left;
+	line-height: 32px;
+}
+.amountshuru{
+	border:2px solid #009cff;
+}
+.amount input{
+	float: left;
+	width: 174px;
+	height: 32px;
+	background:#e6eefd;
+	line-height: 32px;
+	border:2px solid #fff;
+	text-indent: 5px;
+
+}
+.main_reflect{
+	border:2px solid #93bdee;
+	background:#f9fafd;
+	padding-bottom: 30px;
+	margin-bottom: 42px;
+}
+.main_reflect .tit{
+	width: 100px;
+	text-align: right
+}
+.bankBox{
+	display: block
+}
+.bankBox .error{
+	width: 300px;
+	display:block;
+	height: 32px;
+	line-height: 32px;
+	color: #f00;
+	font-size: 12px;
+	float: none;
+	margin-left: 100px;
+}
+.chooseBank{
+	padding-left: 300px;
+}
+.chooseBank p{
+	float: left;
+	line-height: 46px
+}
+.chooseBank .card{
+	float: left;
+}
+#cardList{
+	float: left;
+	width: 500px;
+}
+.card{
+	width: 470px;
+	border:1px solid #90c1dd;
+	height: 46px;
+	line-height: 46px;
+	background:#ecf3f9;
+	margin-bottom: 20px;
+}
+.card p{
+	float: left;
+}
+.card .manage{
+	float: right;
+	padding-right: 25px;
+}
+/*.card input{
+	float: left;
+	margin:16px 15px 0px 7px;
+}*/
+.card span.icon{
+	float: left;
+	width: 16px;
+    height: 16px;
+    margin: 12px 10px 0 4px;
+    background: url(../images/bankxuanzhong.png) no-repeat;
+}
+.activeCard span.icon{
+    background: url(../images/bankxuanzhong.png) 0 -30px no-repeat;
+}
+.bankpic{
+	margin-right: 32px
+}
+.chooseBank .addCard{
+	color: #0098cf;
+	display: inline-block;
+	margin:4px 0px 18px 100px;
+	cursor: pointer;
+}
+.sure{
+	width: 152px;
+	border-bottom:1px solid #185cac;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	background:#1f79e4;
+	color: #fff	;
+	border-radius: 2px;
+	border:none;
+	margin-left:100px;
+}
+.chooseBank .wait{
+	color:#fff;
+	background: #c6c6c6;
+	border-bottom:1px solid #c6c6c9;
+	cursor: wait;
+}
+
+.failure{
+	display: none;
+}
+.failureicon{
+	height: 35px;
+	background:url(../images/chooseicon.png) no-repeat 580px -52px;
+	margin-top: 65px;
+}
+.failure p{
+	width: 100%;
+	float: none;
+	text-align: center;
+}
+.depositbtn{
+	width: 152px;
+	border-bottom:1px solid #185cac;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	background:#1f79e4;
+	color: #fff	;
+	border-radius: 2px;
+	border:none;
+	margin:24px 0px 0px 522px
+}
+.audit{
+	display: none;
+	padding-top: 65px;
+}
+.audit p{
+	color:#000;
+	font-size: 14px;
+	text-align: center;
+	color: #999999
+}
+.audit h4{
+	line-height: 33px;
+	background:url(../images/chooseicon.png) no-repeat 511px 0px;
+	padding-left: 555px;
+}
+.audit .guinian{
+	line-height: 33px;
+	background:url(../images/chooseicon.png) no-repeat 458px -110px;
+	padding-left: 555px;
+	text-align: left;
+}
+.audit .countdown{
+	color: #666;
+	font-size: 35px;
+}
+.audit ul{
+	padding-left: 515px;
+	margin-top: 12px
+}
+.audit ul li{
+	float: left;
+	color: #0098cf;
+	margin-right: 22px;
+}
+.successbox{
+	display: none
+}
+.sucpic{
+	padding-top: 30px;
+}
+.addCardPob{
+	/*display: block;*/
+	width: 380px;
+	display: none;
+	height: 450px;
+	margin-top: -250px;
+	margin-left:-190px;
+}
+.addCardPob h3 p{
+	padding-left: 14px;
+}
+.addCardPob a{
+	margin-top:16px; 
+}
+.addCardPob p{
+	margin-bottom: 0px
+
+}
+.carderror{
+	color: #f00;
+	display: block;
+	font-size: 12px;
+	height: 25px;
+	line-height: 25px;
+	margin-left: 100px;
+}
+.cardtext{
+	padding:0px 0px 0px 15px;
+}
+.cardtext span{
+	float: left;
+	display: block;
+	line-height: 32px;
+}
+
+.cardtext input,.cardtext select,.cardtext textarea{
+	float: left;
+	display: block;
+	width: 250px;
+	height: 32px;
+	border:1px solid #c9d1d6;
+	border-radius: 1px;
+}
+.addCardPob .cardtext span{
+	width: 84px;
+	text-align: right;
+}
+.addCardPob .liandong select{
+	width: 124px;
+}
+.addCardPob .cardtext .err{
+	width: 100%;
+	font-size: 12px;
+	color: #f00;
+	height: 16px;
+	line-height: 16px;
+	float: none;
+	text-align: left;
+	margin: 4px 0px 4px 84px;
+}
+.transferpob{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 365px;
+	height: 200px;
+	margin-top:-100px;
+	margin-left: -182px; 
+	display: none;
+	z-index: 17;
+	background:#fff;
+}
+.transferpob h3{
+	margin: 0px
+} 
+.transferpob h3 p{
+	float: left;
+	color: #0088ff;
+	font-size:20px;
+	padding: 15px;
+	margin: 0px
+}
+.transferpob h3 span{
+	float: right;
+	color: #aaaaaa;
+	margin:16px 0px 0px 13px;
+	display: block;
+}
+.transfercomfir{
+	text-align: center;
+}
+.transferpob a{
+	display: block;
+	height: 28px;
+	width: 85px;
+	border-bottom:1px solid #185cac;
+	border-radius: 2px;
+	background:#207be8;
+	margin: 34px 0px 0px 140px;
+	text-align: center;
+	color: #fff;
+	line-height: 28px;
+}
+.passwordbox{
+	text-align: center;
+}
+.perror{
+	text-align: center;
+	color: #f00;
+	font-size: 12px;
+}
+.fundsPassword .tit{
+	float: left;
+	line-height: 32px;
+}
+.fundsPassword .passwordshuru{
+	float: left;
+}
+.fundsPassword .passwordshuru i{
+	font-style:normal;
+	font-weight:normal;
+}
+.fundsPassword .passwordshuru i b{
+	color:#1f76df;
+	font-weight:normal;
+	
+}
+.fundsPassword .passwordshuru input{
+	width: 174px;
+	height: 32px;
+	line-height: 32px;
+}
+.addrpob h3 p{
+	padding-left: 15px;
+}

@@ -1,0 +1,9 @@
+{
+    "dev": true,
+    "imgpath": "..", 
+    "csspath": "..", 
+    "jspath": "..", 
+    "rootUrl": "root", 
+    "index":"index", 
+    "views": "/views/"
+}

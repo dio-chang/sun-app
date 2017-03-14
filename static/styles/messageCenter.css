@@ -1,0 +1,56 @@
+ul{
+	margin-bottom: 0px
+}
+.main_r{
+	padding: 0px 0px 110px 0px
+}
+.main_r h3{
+	padding-left: 45px;
+	margin:0px;
+	padding: 24px 0 20px 40px;
+}
+#list p{
+	font-size: 20px;
+	text-align: center;
+	padding: 50px 0px; 
+}
+.list li,.listtit li{
+	width: 100%;
+	line-height: 50px;
+	height: 50px;
+}
+.list li{
+	cursor: pointer;
+}
+.listtit li{
+	background:#f9faf9;
+}
+.list .even{
+	background:#fff;
+}
+.list .odd{
+	background:#f9faf9;
+	
+}
+.list li span,.listtit li span{
+	float: left;
+	display: block;
+}
+.list li .one,.listtit li .one{
+	width: 70%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	padding-left:55px;
+}
+.list li .two,.listtit li .two{
+	width: 26%
+}
+.list li .three,.listtit li .three{
+	width: 2%;
+	
+}
+.list li .del{
+	height: 50px;
+	background:url(../images/delicon.png) no-repeat -1px 15px;
+}

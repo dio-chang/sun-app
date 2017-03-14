@@ -1,0 +1,521 @@
+
+.head{
+	width: 100%;
+	height: 45px;
+	position: relative;
+	background-image: linear-gradient(-225deg,#227eed,#54d4fb);
+}
+.head a{
+	position: absolute;
+	top: 0px;
+	color: #fff;
+	font-size: 1.5rem;
+	display: inline-block;
+	line-height: 45px;
+}
+.head h2{
+	text-align: center;
+	height: 45px;
+	line-height: 45px;
+	font-size: 1.6rem;
+	color: #fff
+}
+.login{
+	right: 2%
+	
+}
+.register{
+	right: 12%
+}
+.head .nav_button{
+	width: 2.8rem;
+	height: 2.8rem;
+	left: 2%;
+	top: 0.5rem;
+	background:url(../../images/mobile/menu.png) no-repeat;
+	background-size: 100%;
+}
+.head .unLogin{
+	display: none
+}
+.head .personal_button{
+	position: absolute;
+	display: block;
+	width: 2.8rem;
+	height: 2.8rem;
+	right: 2%;
+	top: 0.5rem;
+	background: url(../../images/mobile/personIcon.png) no-repeat;
+	background-size: 100%
+}
+
+/*panel*/
+.panelLeft{
+	background: url(../../images/mobile/leftbarbg.png) no-repeat;
+	background-size: 100%;
+}
+.panelRight{
+	background: url(../../images/mobile/rightbarbg.png) no-repeat;
+	background-size: 100%;
+}
+.panel{
+	position: absolute;
+	height: 100%;
+	width: 24rem;
+    transition: transform 300ms ease;
+	top: 0px;
+	z-index: 3;
+	box-shadow: 5px 0 5px rgba(0,0,0,.15);
+} 
+.panelLeft.panelClose{
+	-webkit-transform: translate3d(-300px,0,0);
+	transform: translate3d(-300px,0,0);
+	/*display: none;*/
+}
+.panelLeft.panelOpen{
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+	/*display: block;*/
+}
+.panelRight.panelClose{
+	-webkit-transform: translate3d(800px,0,0);
+	transform: translate3d(800px,0,0);
+	/*display: none;*/
+}
+.panelRight.panelOpen{
+	-webkit-transform: translate3d(50%,0,0);
+	transform: translate3d(50%,0,0);
+	/*display: block;*/
+}
+.panel ul{
+	margin-top: 5.8rem;
+}
+.panelRight ul{
+	margin-top: 2rem;
+}
+.panelRight dl{
+	padding-top: 9.8rem;
+	background: url(../../images/mobile/personal_icon.png) no-repeat center 1.8rem;
+	background-size: 26%;
+}
+.panelRight dt{
+	text-align: center;
+	font-size:1.4rem;
+	color: #fff;
+	line-height:2.5rem;
+}
+.panelRight dd{
+	line-height: 2.5rem;
+	width: 60%;
+	margin-left: 25%;
+}
+.panelRight span{
+	display: block;
+	float: left;
+	text-align: center;
+	color: #fff;
+	font-size: 1.4rem;
+}
+.panelRight i{
+	display: block;
+	width:2.2rem;
+	height: 2.2rem;
+	float: left;
+	background: url(../../images/mobile/refresh.png);
+	background-size: contain;
+	margin-left: 1rem;
+}
+.panel li{
+	color: #fff;
+	line-height:5rem;
+	height: 5rem;
+	padding-left: 1.6rem;
+	float: left;
+
+}
+.panel li span{
+	display:block;
+	width: 1.8rem;
+	height: 5rem;
+	float: left;
+}
+.panel li a{
+	color:rgba(255,255,255,0.7);
+	display:block;
+	font-size: 1.4rem;
+	margin-left: 2.0rem;
+	border-bottom: 1px solid #4d6278;
+	width: 11.5rem;
+	float: left;
+}
+
+.panel li.home span{
+	background: url(../../images/mobile/homeIcon.png) no-repeat center center;
+	background-size:contain;
+}
+.panel li.live span{
+	background: url(../../images/mobile/liveIcon.png) no-repeat center  center;
+	background-size:80%;
+}
+.panel li.sport span{
+	background: url(../../images/mobile/sportsIcon.png) no-repeat center  center;
+	background-size:contain;
+}
+.panel li.slotMachine span{
+	background: url(../../images/mobile/slotMachineIcon.png) no-repeat center  center;
+	background-size:80%;
+}
+.panel li.lottery span{
+	background: url(../../images/mobile/lotteryIcon.png) no-repeat center  center;
+	background-size:contain;
+}
+.panel li.chess span{
+	background: url(../../images/mobile/chessIcon.png) no-repeat center  center;
+	background-size:contain;
+}
+
+
+.panel li.yue span{
+	background: url(../../images/mobile/yue_icon.png) no-repeat center center;
+	background-size:85%;
+}
+.panel li.recharge span{
+	background: url(../../images/mobile/recharge_icon.png) no-repeat center  center;
+	background-size:contain;
+}
+.panel li.reflect span{
+	background: url(../../images/mobile/reflect_icon.png) no-repeat center  center;
+	background-size:80%;
+}
+.panel li.transfer span{
+	background: url(../../images/mobile/transfer_icon.png) no-repeat center  center;
+	background-size:80%;
+}
+.panel li.financialRecords span{
+	background: url(../../images/mobile/record_icon.png) no-repeat center  center;
+	background-size:80%;
+}
+
+
+.clear{
+	clear: both;
+}
+.banner{
+	position: relative;
+}
+.notice{
+	position: absolute;
+	bottom: 0px;
+	background: rgba(0,0,0,0.8);
+}
+.notice-list>ul>li{height:36px;line-height:36px;overflow:hidden;}
+.notice-list>ul>li{margin-right: 50px;}
+.notice .title{float:left;padding-right:18px;color:#fff;}
+.notice-list{float:left;width:1020px;}
+.notice-list,.notice-list a{color:rgba(255,255,255,0.6);font-size:12px;}
+.notice-list a:hover{text-decoration:underline;}
+.notice .noticeIcon{
+	width: 5%;
+	float: left;
+	height: 3rem;
+	margin-left: 2%
+}
+.notice .noticeIcon span{
+	display: block;
+	margin-top: 0.9rem;
+	width: 17px;
+	height: 14px;
+	background: url(../../images/mobile/notice_icon.png) no-repeat;
+	background-size: contain;
+}
+.notice .notice-list{
+	width: 90%;
+	float: left;
+	height: 3rem;
+	line-height: 3rem;
+	overflow: hidden;
+}
+.banner img{
+	width:100%;
+	display: block;
+
+}
+.navBox img{
+	display: block;
+	width: 100%;
+}
+.navBox ul{
+	position: relative;
+}
+
+.navBox li{
+	width: 50%;
+	float: left;
+	height: 80px;
+}
+.navBox li a{
+	display: block;
+}
+.navBox a{
+	display: block;
+}
+.navBox .shut{
+	left: 50%;
+	top:0px;
+	width: 1px;
+	height: 80px;
+	background:url(../../images/mobile/shut.png) no-repeat;
+}
+.navBox .hengl{
+	left:0px;
+	top:80px;
+	width: 50%;
+	height: 1px;
+	background:url(../../images/mobile/hengl.png) no-repeat;
+}
+.navBox .shub{
+	left: 50%;
+	top:80px;
+	width: 1px;
+	height: 80px;
+	background:url(../../images/mobile/shub.png) no-repeat;
+}
+.navBox .hengr{
+	left:50%;
+	top:80px;
+	width: 50%;
+	height: 1px;
+	background:url(../../images/mobile/hengr.png) no-repeat;
+}
+.navBox .hengr{
+
+}
+.navBox .positionli{
+	position: absolute;
+	background-size:contain;
+}
+.navBox li dl{
+	height: 80px;
+	margin-left: 1.6rem
+}
+.navBox dl dt{
+	font-size: 1.4rem;
+	padding: 1.6rem 0 1.1rem 0;
+}
+.navBox dl dd{
+	color: #a0a0a0;
+	font-size: 1.1rem;
+}
+.navBox li dl dt{
+	width: 60%;
+	position: relative;
+}
+.navBox dl dt{
+	position: relative;
+}
+.navBox li dl dd{
+	width: 60%;
+}
+/*.live ul dt{
+	background:url(../../images/mobile/livearrow.png) no-repeat 80% 19px;
+	background-size: 10%;
+
+}*/
+.navBox .numscrotop{
+	position: relative;
+}
+.navBox .numscrotop dl dd{
+	width: 100%
+}
+.live ul dt .icon{
+	position: absolute;
+	top:21px;
+	left: 68%;
+	width: 7px;
+	height: 13px;
+	background: url(../../images/mobile/livearrow.png) no-repeat;
+	background-size:100%;
+}
+.sports dt .icon{
+	position: absolute;
+	top:21px;
+	left: 18%;
+	width: 7px;
+	height: 13px;
+	background: url(../../images/mobile/sportarrow.png) no-repeat;
+	background-size:100%;
+}
+.slotMachine dt .icon{
+	position: absolute;
+	top:21px;
+	left: 68%;
+	width: 7px;
+	height: 13px;
+	background: url(../../images/mobile/slotarrow.png) no-repeat;
+	background-size:100%;
+}
+.chess dt .icon{
+	position: absolute;
+	top:21px;
+	left: 18%;
+	width: 7px;
+	height: 13px;
+	background: url(../../images/mobile/slotarrow.png) no-repeat;
+	background-size:100%;
+}
+.live ul .bbin_box dt .icon{
+	left: 82%
+}
+.ag_box dl{
+	background:url(../../images/mobile/shaizi.png) no-repeat right bottom;
+	background-size: 54%
+}
+.bbin_box dl{
+	background:url(../../images/mobile/card.png) no-repeat right bottom;
+	background-size: 54%
+}
+.mg_box dl{
+	background:url(../../images/mobile/chouma.png) no-repeat right bottom;
+	background-size: 54%
+}
+.pt_box dl{
+	background:url(../../images/mobile/lingdang.png) no-repeat right bottom;
+	background-size: 54%
+}
+.sports dl{
+	margin-left: 1.6rem;
+	background:url(../../images/mobile/football.png) no-repeat right bottom;
+	background-size: 54%;
+	height: 80px;
+}
+.sports dl dt{
+	font-size: 1.4rem;
+	padding: 1.6rem 0 1.1rem 0;
+}
+.sports dl dd{
+	font-size: 1.1rem;
+	color: #a0a0a0;
+}
+.ptslot_box dl{
+	background:url(../../images/mobile/ptSlotmachine.png) no-repeat right bottom;
+	background-size: 54%
+}
+.mgsloat_box dl{
+	background:url(../../images/mobile/777.png) no-repeat right bottom;
+	background-size: 54%
+}
+.xinxslot_box dl{
+	background:url(../../images/mobile/meidui.png) no-repeat right bottom;
+	background-size: 54%
+}
+.lottery dl{
+	margin-left: 1.6rem;
+	background:url(../../images/mobile/sportsbg.png) no-repeat right bottom;
+	background-size: 54%;
+	height: 80px;
+}
+.chess dl{
+	margin-left: 1.6rem;
+	background:url(../../images/mobile/yubg.png) no-repeat right bottom;
+	background-size: 54%;
+	height: 80px;
+}
+/*数字滚动*/
+#num-roll {position:absolute; left:6px;height: 20px;}
+#num-roll .num{margin: 0 1px;}
+#num-roll .num div {
+    height: 20px;
+    width: 13px;
+}
+#num-roll .num div.isPicture {
+    width: 13px;
+    height: 20px;
+    text-indent: -600px;
+    background: url('../../images/smallnum.jpg') no-repeat;
+}
+#num-roll div.isPicture.num0 {
+    background-position: 0px center;
+}
+#num-roll div.isPicture.num1 {
+    background-position: -13px center;
+}
+#num-roll div.isPicture.num2 {
+    background-position: -26px center;
+}
+#num-roll div.isPicture.num3 {
+    background-position: -39px center;
+}
+#num-roll div.isPicture.num4 {
+    background-position: -52px center;
+}
+#num-roll div.isPicture.num5 {
+    background-position: -65px center;
+}
+#num-roll div.isPicture.num6 {
+    background-position: -78px center;
+}
+#num-roll div.isPicture.num7 {
+    background-position: -91px center;
+}
+#num-roll div.isPicture.num8 {
+    background-position: -104px center;
+}
+#num-roll div.isPicture.num9 {
+    background-position: -117px center;
+}
+
+
+.footer{
+	background:url(../../images/mobile/footbg.png) no-repeat;
+	background-size: 100%;
+	padding-bottom: 15px;
+}
+.footer .logo{
+	background:url(../../images/mobile/logobttom.png) no-repeat center;
+	width: 25%;
+	height: 62px;
+	background-size: 90%;
+	padding-top: 40px;
+	margin:auto;
+}
+.footerNav li{
+	width: 33.333%;
+	float: left;
+	height: 60px;
+	margin-top: 6px;	
+}
+.footerNav li a{
+	display: block;
+}
+.footerNav li dt{
+	height: 25px;
+	background-size:contain;
+}
+.goLogin dt{
+	background:url(../../images/mobile/navicon1.png) no-repeat center;
+}
+.goRegister dt{
+	background:url(../../images/mobile/navicon2.png) no-repeat center;
+}
+.onlineKefu dt{
+	background:url(../../images/mobile/navicon3.png) no-repeat center;
+}
+.footerNav li dd{
+	text-align: center;
+	margin-top: 6px
+}
+.footer p{
+	text-align: center;
+	font-size: 11px;
+	opacity: 0.6;
+	color: #fff;
+}
+.mask{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
+	display: none;
+}

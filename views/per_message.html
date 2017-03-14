@@ -1,0 +1,57 @@
+@@include("./layout/header.html" , {
+      tit:"消息中心",
+})
+<link rel="stylesheet" type="text/css" href="@@{csspath}/static/styles/personalCenter.css">
+<link rel="stylesheet" type="text/css" href="@@{csspath}/static/styles/progress-ring.css">
+<link rel="stylesheet" type="text/css" href="@@{csspath}/static/styles/lq.datetimepick.css">
+<link rel="stylesheet" type="text/css" href="@@{csspath}/static/styles/messageCenter.css">
+@@include("./layout/personalLayout.html")
+		<div class="main_r">
+			<h3>消息中心</h3>
+			<div>
+				<ul class="listtit">
+					<li class="">
+						<span class="one">主题</span>
+						<span class="two">时间</span> 
+						<span class="three"></span>
+					</li>
+				</ul>
+				<div class="clear"></div>
+				<div id="list">
+					
+				</div>
+				<div class="clear"></div>
+				<script type="text/template" id="tpl">
+					<ul class="list">
+						<% _(data).each(function (v, k) { %>
+							<li class="" data-id="<%=v.get('id')%>">
+								<span data-id="<%=v.get('id')%>" class="one messageTit"><%=v.get('title')%></span>
+								<span data-id="<%=v.get('id')%>" class="two"><%=v.get('addtime')%></span>
+								<span class="three del" data-id="<%=v.get('id')%>"></span>
+							</li>
+						<% }) %>
+					</ul>	
+					<div class="pagelist">
+			            <ul class="pager pull-right">
+							<li class="first_page">首页</li>
+							<li class="prev_page">上一页</li>
+							<li> <input class="pageinput" name="currentpage" type="text" value="<%=currentpage%>" >
+							</li>
+							<li class="goto">Go</li>
+							<li class="next_page">下一页</li>
+							<li class="last_page">尾页</li>
+			            </ul>
+			        </div> 
+				</script>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+@@include("./layout/footer.html")	
+<script type="text/javascript" src="@@{jspath}/static/scripts/jquery.classyloader.min.js"></script>
+<script type="text/javascript" src="@@{jspath}/static/scripts/lq.datetimepick.js"></script>
+<script type="text/javascript" src="@@{jspath}/static/scripts/selectUi.js"></script>
+<script type="text/javascript" src="@@{jspath}/static/scripts/per_message.js"></script>
+<script type="text/javascript" src="@@{jspath}/static/scripts/personalPublic.js"></script>
+</body>
+</html>

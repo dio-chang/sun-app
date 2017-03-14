@@ -1,0 +1,86 @@
+@@include("./layout/header.html" , {
+      tit:"投注记录",
+})
+<link rel="stylesheet" type="text/css" href="@@{csspath}/static/styles/personalCenter.css">
+<link rel="stylesheet" type="text/css" href="@@{csspath}/static/styles/lq.datetimepick.css">
+<link rel="stylesheet" type="text/css" href="@@{csspath}/static/styles/per_betting.css">
+@@include("./layout/personalLayout.html")
+		<div class="main_r">
+			<h3>投注记录<span>*不能跨月查询</span></h3>
+			<div class="search">
+				<p>起止时间：</p>
+				<p> <input type="text" name="datepicker" id="datetimepicker3" class="form-control chang" value="">
+					<input type="text" name="datepicker" id="datetimepicker1" class="form-control duan" value="">
+				</p>
+				<p>
+				-
+				</p>
+				<p>
+					<input type="text" name="datepicker" id="datetimepicker4" class="form-control
+					chang" value="">
+					<input type="text" name="datepicker" id="datetimepicker2" class="form-control duan" value="">
+				</p>
+				<p>
+					<select id="select2">
+					</select>
+					
+				</p>
+				<p class="saveSearch">查询</p>
+				<div class="clear"></div>
+			</div>
+			<div>
+				<ul class="listtit">
+					<li class="">
+						<span>投注类型</span>
+						<span>投注金额</span>
+						<span>输赢状况</span>
+						<span>投注时间</span>
+					</li>
+				</ul>
+				<ul class="list">
+					
+				</ul>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<input type="hidden" name="" id="pid"> 
+	<script type="text/template" id="getplat">
+		<% _(data).each(function (v, k) { %>
+			<option data-pid="<%=v.get('id')%>"><%=v.get('shorttitle')%></option>
+		<% }) %>
+	</script>
+	<script type="text/template" id="betting">
+		<% _(data).each(function (v, k) { %>
+			<li>
+				<span><%=v.get('gametype')%></span>
+				<span><%=v.get('validbetamount')%></span>
+				<span class="
+				<%if(v.get('netamount')>0){%>
+					ying
+				<%}else{%>
+					shu
+				<%}%>">
+				<%=v.get('netamount')%></span>
+				<span class="bettime" data-time="<%=v.get('bettime')%>"><%= formatTime(v.get('bettime'), 2) %></span>
+			</li>
+		<% }) %>
+			<li class="pageList">
+				<button class="first_page">首页</button>
+				<button class="prev_page">上一页</button>
+				<span> <input class="pageinput" name="currentpage" type="text" value="<%= currentpage %>" >
+				</span>
+				<span class="goto">Go</span>
+				<button class="next_page">下一页</button>
+				<button class="last_page">尾页</button>
+				<!-- <p class="pagetips">已经是最后一页了</p> -->
+			</li>	
+	</script>
+@@include("./layout/footer.html")	
+<script type="text/javascript" src="@@{jspath}/static/scripts/jquery.classyloader.min.js"></script>
+<script type="text/javascript" src="@@{jspath}/static/scripts/lq.datetimepick.js"></script>
+<script type="text/javascript" src="@@{jspath}/static/scripts/selectUi.js"></script>
+<script type="text/javascript" src="@@{jspath}/static/scripts/per_betting.js"></script>
+<script type="text/javascript" src="@@{jspath}/static/scripts/personalPublic.js"></script>
+</body>
+</html>

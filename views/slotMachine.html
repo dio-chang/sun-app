@@ -1,0 +1,204 @@
+@@include("./layout/header.html" , { 
+      tit:"老虎机",
+})
+	<link rel="stylesheet" type="text/css" href="@@{csspath}/static/styles/slotMachine.css">
+	<div class="banner"></div>
+	@@include("./layout/noticeLayout.html")
+	<div class="main">
+		<div class="main_inner">
+			<ul class="sub_nav">
+				<li class="hot cur"></li>
+				<li class="pt" data-pid="9"></li> 
+				<li class="mg" data-pid="22"></li>
+				<li class="xin" data-pid="19"></li>
+			</ul>
+			<div class="clear"></div>
+			<div class="prizePool">
+				<div class="prizetit">总奖池:</div>
+				<div id="num-roll" class="myroll"></div>
+			</div>
+			<div class="clear"></div>
+			
+			<div class="content">
+				<a class="youhui" href="promo.html"></a> 
+				<div class="hotlist contentList">
+				</div>
+				<div class="ptlist contentList">
+					<!-- <div class="conditionalNav">
+						<ul class="select">
+							<li class="select-list">
+								<dl id="select1">
+									<dt>游戏类别：</dt>
+									<dd class="select-all selected"><a href="javascript:;">全部</a></dd>
+									<dd><a href="javascript:;">老虎机</a></dd>
+									<dd><a href="javascript:;">桌面游戏</a></dd>
+									<dd><a href="javascript:;">纸牌</a></dd>
+									<dd><a href="javascript:;">视频扑克</a></dd>
+									<dd><a href="javascript:;">游戏和基诺</a></dd>
+								</dl>
+							</li>
+							<li class="select-list">
+								<dl id="select2">
+									<dt>最低投注：</dt>
+									<dd class="select-all selected"><a href="javascript:;">不限</a></dd>
+									<dd><a href="javascript:;">0.01</a></dd>
+									<dd><a href="javascript:;">0.05</a></dd>
+									<dd><a href="javascript:;">0.10</a></dd>
+									<dd><a href="javascript:;">0.50</a></dd>
+									<dd><a href="javascript:;">0.75</a></dd>
+									<dd><a href="javascript:;">1元以上</a></dd>
+								</dl>
+							</li>
+							<li class="select-list">
+								<dl id="select3">
+									<dt>线数：</dt>
+									<dd class="select-all selected"><a href="javascript:;">不限</a></dd>
+									<dd><a href="javascript:;">10线</a></dd>
+									<dd><a href="javascript:;">15线</a></dd>
+									<dd><a href="javascript:;">20线</a></dd>
+									<dd><a href="javascript:;">25线以上</a></dd>
+								</dl>
+							</li>
+							<li class="select-list">
+								<dl id="select4">
+									<dt>难度：</dt>
+									<dd class="select-all selected"><a href="javascript:;">不限</a></dd>
+									<dd><a href="javascript:;">小额玩家（100-500元）</a></dd>
+									<dd><a href="javascript:;">中级玩家（500-1000元）</a></dd>
+									<dd><a href="javascript:;">高富帅玩家（1000元以上）</a></dd>
+								</dl>
+							</li>
+							
+						</ul>
+					</div> -->
+				</div>
+				<div class="contentList mglist">
+				</div>
+				<div class="contentList xinlist">
+				</div>
+				<div class="clear"></div>
+			</div>	
+			<div class="clear"></div>
+			<div class="news">
+				<div class="news_inner">
+					<ul id="news">
+						<li class="box green">
+							<a class="close">X</a>
+							<p>1分钟前</p>
+							<p>h***per在 <span>钢铁侠</span></p>
+							<p><span>免费游戏</span>中赢得<span>￥754</span></p>
+						</li>
+						<li class="box pink">
+							<a class="close">X</a>
+							<p>4分钟前</p>
+							<p>h***per在 <span>钢铁侠</span></p>
+							<p><span>免费游戏</span>中赢得<span>￥754</span></p>
+						</li>
+						<li class="box green">
+							<a class="close">X</a>
+							<p>6分钟前</p>
+							<p>h***per在 <span>钢铁侠</span></p>
+							<p><span>免费游戏</span>中赢得<span>￥754</span></p>
+						</li>
+						<li class="box pink">
+							<a class="close">X</a>
+							<p>4分钟前</p>
+							<p>h***per在 <span>钢铁侠</span></p>
+							<p><span>免费游戏</span>中赢得<span>￥754</span></p>
+						</li>
+						<li class="box green">
+							<a class="close">X</a>
+							<p>6分钟前</p>
+							<p>h***per在 <span>钢铁侠</span></p>
+							<p><span>免费游戏</span>中赢得<span>￥754</span></p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/template" id="getTopgameHistory">
+		<% _(data).each(function (v, k) { %>
+			<li class="box
+			<%if(k%2==1){%>
+				green
+			<%}else{%>
+				pink
+			<%}%>
+			">
+				<p class="gametime"><%= formatTime(v.get('bettime'), 2) %></p>
+				<p><%=v.get('username')%>在 <span><%=v.get('gametype')%></span></p>
+				<p><span>免费游戏</span>中赢得<span>￥<%=v.get('netamount')%></span></p>
+			</li>
+		<% }) %>
+	</script>
+@@include("./layout/footer.html")
+<script type="text/template" id="hotGame">
+		<% _(data).each(function (v, k) { %>
+		<div class="hotgame smallpic" data-pid="<%=v.get('pid')%>" data-value="<%=v.get('value')%>" data-isshow="<%=v.get('isshow')%>">
+			<p>
+				<%if(v.get('imgurl')){%>
+				<img src="@@{imgpath}/static/<%=v.get('imgurl')%>">
+				<%}else{%>
+				<img src="@@{imgpath}/static/images/smallslot.jpg">	
+				<%}%>
+			</p>
+			<p class="gameTitle"><%=v.get('title')%></p>
+		</div>
+		<% }) %>
+		<div class="clear"></div>
+	</script>
+	<script type="text/template" id="ptGame">
+		<% _(data).each(function (v, k) { %>
+		<div class="smallpic" data-pid="<%=v.get('pid')%>" data-value="<%=v.get('value')%>" data-isshow="<%=v.get('isshow')%>" data-tit="<%=v.get('title')%>">
+			<p class="picbox">
+				<img src="@@{imgpath}/static/<%=v.get('imgurl')%>">
+				<span class="cover">
+					<span class="coverBg"></span>
+					<span class="covertit"><%=v.get('title')%></span>
+				</span>
+			</p>
+			<p class="gameTitle"><%=v.get('title')%></p>
+			<ul class="gameTab">
+				<li class="goGame" data-pid="<%=v.get('pid')%>" data-value="<%=v.get('value')%>" data-isshow="<%=v.get('isshow')%>" data-tit="<%=v.get('title')%>">开始游戏</li>
+				<li class="goTrygame" data-pid="<%=v.get('pid')%>" data-value="<%=v.get('value')%>" data-isshow="<%=v.get('isshow')%>" data-tit="<%=v.get('title')%>">立即试玩</li>
+			</ul>
+		</div>
+		<% }) %>
+		<div class="clear"></div>
+	</script>
+	<script type="text/template" id="mgGame">
+		<% _(data).each(function (v, k) { %>
+		<div class="smallpic" data-pid="<%=v.get('pid')%>" data-value="<%=v.get('value')%>" data-isshow="<%=v.get('isshow')%>">
+			<p class="picbox">
+				<img src="@@{imgpath}/static/<%=v.get('imgurl')%>">
+				<span class="cover">
+					<span class="coverBg"></span>
+					<span class="covertit"><%=v.get('title')%></span>
+				</span>
+			</p>
+			<p class="gameTitle"><%=v.get('title')%></p>
+			<ul class="gameTab">
+				<li class="goGameMg" data-pid="<%=v.get('pid')%>" data-value="<%=v.get('value')%>" data-isshow="<%=v.get('isshow')%>" data-tit="<%=v.get('title')%>">开始游戏</li>
+				<li class="goTrygameMg" data-pid="<%=v.get('pid')%>" data-value="<%=v.get('value')%>" data-isshow="<%=v.get('isshow')%>" data-tit="<%=v.get('title')%>">立即试玩</li>
+			</ul>
+		</div>
+		<% }) %>
+		<div class="clear"></div>
+	</script>
+	<script type="text/template" id="xinGame">
+		<% _(data).each(function (v, k) { %>
+		<div class="smallpic xinpic" data-pid="<%=v.get('pid')%>" data-value="<%=v.get('value')%>" data-isshow="<%=v.get('isshow')%>" data-tit="<%=v.get('title')%>">
+			<p>
+				<img src="@@{imgpath}/static/<%=v.get('imgurl')%>">
+			</p>
+			<p class="gameTitle"><%=v.get('title')%></p>
+		</div>
+		<% }) %>
+		<div class="clear"></div>
+	</script>	
+<script src="@@{jspath}/static/scripts/jquery.kxbdMarquee.js"></script>
+<script type="text/javascript" src="@@{jspath}/static/scripts/num-2-pic.js"></script>
+<script type="text/javascript" src="@@{jspath}/static/scripts/slotMachine.js"></script>
+</body>
+</html>

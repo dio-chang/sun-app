@@ -1,0 +1,172 @@
+@@include("./layout/header.html" , {
+      tit:"安全设置",
+})
+	<link rel="stylesheet" type="text/css" href="@@{csspath}/static/styles/personalCenter.css">
+	<link rel="stylesheet" type="text/css" href="@@{csspath}/static/styles/progress-ring.css">
+@@include("./layout/personalLayout.html")
+		<div class="main_r"> 
+			<div class="main_rt">
+				<h3 class="ziliao">个人资料</h3>
+				<p class="bindtips">绑定真实姓名可获5元</p>
+				<div class="clear"></div>
+				<div class="xinxi">
+					<p class="xin"><span class="forTit">姓：</span><span class="firstName"></span><input type="text" ></p>
+					<p class="ming"><span class="forTit">名：</span><span class="lastName"></span><input type="text" name=""></p>
+					<div class="clear"></div>
+				</div>
+				<p class="tishi">提款时只能用真实姓名操作，绑定后就无法修改哦～</p>
+				<div class="gender">
+					<span class="forTit">性别：</span>
+					<p class="man" data-sex="1"><i></i><span>男</span></p>
+					<p class="woman" data-sex="2"><i></i><span>女</span></p>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+				<div id="dateSelector" class="choose">
+					<span class="forTit">出生年月：</span>
+					<div class="birthday">
+						<select id="idYear" name="idYear" data=""></select>
+						<select id="idMonth" name="idMonth" data="12"></select>
+						<select id="idDay" name="idDay" data="1"></select>
+					</div>
+					<p class="birthday"></p>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+				<p class="save">保存</p>
+			</div>
+			<div class="safe">
+				<h3><strong>安全设置</strong><span>绑定多种帐户，增强安全保障。</span></h3>
+				<div class="clear"></div>
+				<ul class="safeNav">
+					<li class="safeNav1 active"><a href="javascript:;">绑定邮箱</a><span class="doler"></span></li>
+					<li class="safeNav2"><a href="javascript:;">绑定手机</a><span class="doler"></span></li>
+					<li class="safeNav3"><a href="javascript:;">修改资金密码</a><span class="doler"></span></li>
+					<li class="safeNav4"><a href="javascript:;">修改登录密码</a><span class="doler"></span></li>
+					<li class="safeNav5"><a href="javascript:;">设置安全问题</a><span class="doler"></span></li>
+					<li class="safeNav6"><a href="javascript:;">修改安全问题</a><span class="doler"></span></li>
+					<li class="safeNav7"><a href="javascript:;">绑定QQ</a><span class="doler"></span></li>
+					<li class="safeNav8"><a href="javascript:;">绑定微信</a><span class="doler"></span></li>
+				</ul>
+				<div class="clear"></div>
+				<ul class="shurubox">
+					<li class="show showbox1" >
+						<div class="emailaddr"><span>电子邮箱：</span><input id="email" type="text"><span class="getCode">获取验证码</span><p class="clear"></p><span class="error"></div>
+						<div class="codebox"><span>验证码：</span><input class="emailcode" type="text"><p class="clear"></p><span class="error"></div>
+						<p class="baocun button saveemail">保存</p>
+					</li>
+					<li class="showbox2">
+						<div><span>手机号：</span><input class="phoneNumber" type="text"><span class="yanzheng">获取验证码</span><p class="clear"></p><span class="error"></span></div>
+						<div class="phonecodebox"><span>验证码：</span><input class="phonecode" type="text"><p class="clear"></p><span class="error"></div>
+						<p class="baocun button savephone">保存</p>
+					</li>
+					<li class="showbox3">
+						<div class="zijin"><span>旧资金密码：</span><input class="oldfundspassword" type="password" name=""><p class="clear"></p><span class="error"></span></div>
+						
+						<div><span class="newfundpwd">新资金密码：</span><input class="newfundspassword" type="password" name=""><p class="clear"></p><span class="error"></span></div>
+						
+						<div><span class="pronewfundpwd">确认新密码：</span><input class="pronewfundspassword" type="password" name=""><p class="clear"></p><span class="error"></span></div>
+						<p class="baocun button savefundspassword">保存</p>
+					</li>
+					<li class="showbox4">
+						<div><span>旧登录密码：</span><input class="oldpassword" type="password" name=""><p class="clear"></p><span class="error"></span></div>
+						
+						<div><span>新登录密码：</span><input class="newpassword" type="password" name=""><p class="clear"></p><span class="error"></span></div>
+						
+						<div><span>确认新密码：</span><input class="pronewpassword" type="password" name=""><p class="clear"></p><span class="error"></span></div>
+						<p class="baocun button savepassword">保存</p>
+					</li>
+					<li class="showbox5">
+						<div>
+							<span>选择安全问题：</span>
+							<select class="questionName"></select>
+							<p class="clear"></p>
+							<span class="error"></span>
+						</div>
+						<div class="answerBox">
+							<span>答案：</span>
+							<textarea class="answer" name=""></textarea>
+							<p class="clear"></p>
+							<span class="error"></span>
+						</div>
+						<p class="baocun button savequestion">保存</p>
+					</li>
+					<li class="showbox6">
+						<div class="qastep1">
+							<div>
+								<span>选择安全问题：</span>
+								<select class="questionName6"></select>
+								<p class="clear"></p>
+								<span class="error"></span>
+							</div>
+							<div class="huida">
+								<span>答案：</span>
+								<textarea class="answer6" name=""></textarea>
+								<p class="clear"></p>
+								<span class="error"></span>
+							</div>
+							<p class="baocun button checkquestion">验证</p>
+						</div>
+						<input type="hidden" name="" id="qidname">
+						<div class="qastep2">
+							<div>
+								<span>修改安全问题：</span>
+								<input class="questionNamestep2" style="background:rgb(241, 241, 241)" class="disabled" disabled="disabled">
+								<p class="clear"></p>
+								<span class="error"></span>
+							</div>
+							<div class="step2huida">
+								<span>答案：</span>
+								<textarea class="answerstep2" name=""></textarea>
+								<p class="clear"></p>
+								<span class="error"></span>
+							</div>
+							<p class="baocun button changequestion">保存</p>
+						</div>
+					</li>
+					<li class="showbox7">
+						<div>
+							<span>QQ号码：</span>
+							<input type="text" id="qqVal" placeholder="请输入QQ号" name="">
+							<p class="clear"></p>
+						</div>
+						<div>
+							<span>确认QQ号码：</span>
+							<input type="text" id="conqqVal" placeholder="请确认QQ号" name="">
+							<p class="clear"></p>
+						</div>
+						<span class="error"></span>
+						<p class="baocun button saveqq">保存</p>
+					</li>
+					<li class="showbox8">
+						<div>
+							<span>微信号：</span>
+							<input type="text" id="weiVal" placeholder="请输入微信号" name="">
+							<p class="clear"></p>
+						</div>
+						<div>
+							<span>确认微信号：</span>
+							<input type="text" id="conweiVal" placeholder="请确认微信号" name="">
+							<p class="clear"></p>
+						</div>
+						<span class="error"></span>
+						<p class="baocun button saveweixin">保存</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<script type="text/template" id="question">
+	  <% _(data).each(function (v, k) { %>
+	    <option data-id="<%=v.get('id')%>"><%=v.get('title')%></option>
+	  <%})%>
+	</script> 
+@@include("./layout/footer.html")	
+<script type="text/javascript" src="@@{jspath}/static/scripts/jquery.classyloader.min.js"></script>
+<script type="text/javascript" src="@@{jspath}/static/scripts/dateSelector.js"></script>
+<script type="text/javascript" src="@@{jspath}/static/scripts/personalPublic.js"></script>
+<script type="text/javascript" src="@@{jspath}/static/scripts/personalcenter.js"></script>
+
+</body>
+</html>

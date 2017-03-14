@@ -1,0 +1,213 @@
+select{
+	background-position: 94% center;
+}
+#bank_name{
+	background-position: 97% center;
+}
+.main_r{
+	padding-bottom: 128px;
+}
+.main_r h3{
+	padding: 28px 0px 24px 0px;
+}
+.bank{
+	border-bottom: 1px dashed #d3d3d3;
+	padding-bottom:60px;
+}
+
+.bankList li{
+	float: left;
+	width: 180px;
+	border:1px solid #d3d3d3;
+	background:#fff;
+	margin-right: 17px;
+	margin-bottom: 20px
+}
+
+.bankList li:hover{
+	cursor:pointer;
+	border:1px solid #90c1dd;
+	background:#ecf3f9;
+}
+.bankList li.active{
+	border:1px solid #90c1dd;
+	background:#ecf3f9;
+}
+.bankList li span{
+	display: block;
+}
+.bankList .nodata{
+	border:none;
+	width:100%;
+	background:none;
+	font-size: 20px;
+	text-align: center;
+	
+}
+.bankList .nodata:hover{
+	border:none;
+	background: none;
+}
+.addCard{
+	width: 180px;
+	line-height: 39px;
+	border:1px solid #d3d3d3;
+	text-align: center;
+	background:url(../images/jiaicon.png) no-repeat 35px 13px;
+	color:#696969;
+	font-size: 14px;
+	cursor: pointer;
+}
+.clock{
+	width: 180px;
+	height: 34px;
+	border-bottom: 1px solid #185cac;
+	line-height:34px;
+	color: #fff;
+	text-align: center;
+	background:#1f77e1;
+	border-radius: 2px;
+	margin-top: 26px;
+	display: none;
+}
+.main_r .addr h3{
+	padding: 24px 0px 40px 0px
+}
+.main_r .addr h3 p{
+	float: left;
+	width: 90px;
+}
+.main_r .addr h3 span{
+	float: left;
+	color: #999999;
+	font-size: 12px;
+	line-height: 25px;
+	margin-left: 15px;
+}
+.diqu span{
+	float: left;
+	width: 90px; 
+	text-align: right;
+}
+.diqu select{
+	float: left;
+	height: 27px;
+	border:1px solid #c9d1d6;
+	border-radius: 2px;
+	
+
+}
+#pro{
+
+}
+#city{
+	min-width: 80px;
+}
+.country{
+	width: 144px;
+	margin-right: 3px;
+	background: none;
+}
+
+.xiangxi{
+	margin-top: 15px;
+}
+.xiangxi span{
+	float: left;
+	width: 90px; 
+	text-align: right;
+}
+.xiangxi textarea{
+	float: left;
+	width: 433px;
+	height: 126px;
+	border:1px solid #c9d1d6;
+	border-radius: 2px
+}
+.saveAddr{
+	height: 34px;
+	background:#207ce9;
+	border-radius: 2px;
+	width: 152px;
+	border-bottom: 1px solid #185cac;
+	text-align: center;
+	line-height: 34px;
+	color: #fff;
+	margin-left:90px;
+	cursor: pointer;
+}
+.addrerror{
+	font-size: 12px;
+	color: #f00;
+	text-indent: 90px;
+	height: 28px;
+	line-height: 28px;
+}
+.Carderr{
+	font-size: 12px;
+	color: #f00;
+	height: 28px;
+	line-height: 28px;
+}
+.addCardPob{
+	/*display: block;*/
+	width: 380px;
+	display: none;
+	height: 450px;
+	margin-top: -250px;
+	margin-left:-190px;
+}
+.addCardPob h3 p{
+	padding-left: 14px;
+}
+.addCardPob a{
+	margin-top:16px; 
+}
+.addCardPob p{
+	margin-bottom: 0px
+
+}
+.carderror{
+	color: #f00;
+	font-size: 12px;
+	text-align: center;
+	height: 25px;
+	line-height: 25px;
+}
+.cardtext{
+	padding:0px 0px 0px 15px;
+}
+.cardtext span{
+	float: left;
+	display: block;
+	line-height: 32px;
+}
+
+.cardtext input,.cardtext select,.cardtext textarea{
+	float: left;
+	display: block;
+	width: 250px;
+	height: 32px;
+	border:1px solid #c9d1d6;
+	border-radius: 1px;
+}
+.addCardPob .cardtext span{
+	width: 84px;
+	text-align: right;
+}
+.addCardPob .liandong select{
+	width: 124px;
+}
+.addCardPob .cardtext .err{
+	width: 100%;
+	font-size: 12px;
+	color: #f00;
+	height: 16px;
+	line-height: 16px;
+	float: none;
+	text-align: left;
+	margin: 4px 0px 4px 84px;
+}
+.addrpob h3 p{
+	padding-left: 15px;
+}

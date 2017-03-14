@@ -1,0 +1,128 @@
+@@include("./layout/header.html" , {
+      tit:"转账",
+})
+	<link rel="stylesheet" type="text/css" href="@@{csspath}/static/styles/fundspublic.css">
+	<link rel="stylesheet" type="text/css" href="@@{csspath}/static/styles/financialRecord.css">
+	<link rel="stylesheet" type="text/css" href="@@{csspath}/static/styles/progress-ring.css">
+	@@include("./layout/zichanLayout.html")
+		<div class="main_b">
+			<input type="hidden" name="" id="getuserfund">
+			<ul class="qian">
+			
+			</ul>
+			<input type="hidden" id="haspass" name="">
+			<script type="text/template" id="getplattop">
+				<li class="centermoney">
+					<h4><img src="@@{imgpath}/static/images/loading.gif"></h4>
+					<p>中心钱包</p>
+				</li>
+				<% _(data).each(function (v, k) { %>
+				<li
+					class="<%if(v.get('shorttitle')=='PT'){%>
+					ptmoney
+					<%}else if(v.get('shorttitle')=='AGIN'){%>
+					agmoney
+					<%}else if(v.get('shorttitle')=='HABA'){%>
+					habamoney
+					<%}else if(v.get('shorttitle')=='PNG'){%>
+					pngmoney
+					<%}else if(v.get('shorttitle')=='MG'){%>
+					mgmoney
+					<%}else if(v.get('shorttitle')=='BBIN'){%>
+					bbinmoney
+					<%}else if(v.get('shorttitle')=='沙巴体育'){%>
+					sportmoney
+					<%}%> pName"
+					data-id="<%=v.get('id')%>"
+				>
+					<h4><img src="@@{imgpath}/static/images/loading.gif"></h4>
+					<p><%=v.get('shorttitle')%></p>						
+				</li>
+				<% }) %>
+			</script>	
+			<div class="clear"></div>
+			<div class="biaodan">
+				<div class="biaodanl">
+					<p class="select1 out">
+						<span class="zhuanchu">转出：</span>
+						<select id="select1">
+							<option>中心钱包</option>
+						</select>
+						<div class="clear"></div>
+					</p>
+					<p class="select2 into">
+						<span class="zhuanru">转入：</span>
+						<select id="select2">
+						</select>
+						<script type="text/template" id="getplat">
+							<% _(data).each(function (v, k) { %>
+								<option data-pid="<%=v.get('id')%>"><%=v.get('shorttitle')%></option>
+							<% }) %>
+						</script>
+						<div class="clear"></div>
+					</p>
+					<p class="amount">
+						<span>金额：</span>
+						<input id="amount" type="text">
+						<br class="clear">
+						<span class="error"></span>
+					</p>
+					<p class="transfer">转账</p>
+					<p class="exchange"><img src="@@{imgpath}/static/images/exchange.png"></p>
+				</div>
+				<div class="biaodanr">
+					<!-- <h4>您有<span>2个</span>可使用的优惠券</h4>
+					<ul class="counList">
+						<li class="active">
+							<dl>
+								<dt>
+									<span class="couname">PT转账礼金</span>
+									<span class="coutime">生成时间 2016/11/20 23:32:26</span>
+								</dt>
+								<dd>
+									<span class="faceValue">100.00</span>
+									<a href="###">查看详情</a>
+								</dd>
+							</dl>
+							<div class="clear"></div>
+						</li>
+						<li>
+							<dl>
+								<dt>
+									<span class="couname">MG转账礼金</span>
+									<span class="coutime">生成时间 2016/11/20 23:32:26</span>
+								</dt>
+								<dd>
+									<span class="faceValue">100.00</span>
+									<a href="###">查看详情</a>
+								</dd>
+							</dl>
+							<div class="clear"></div>
+						</li>
+					</ul> -->
+					<dl>
+						<dt><img src="@@{imgpath}/static/images/nocoupons.png"></dt>
+						<dd>您未有可使用的优惠券</dd>
+					</dl>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="transferpob pob"> 
+				<h3><p>资金密码</p><span class="close"></span><div class="clear"></div></h3>
+				<p class="transfercomfir">
+					您正在从<span class="transferout"></span>转出<span class="maney"></span>元到<span class="transferinfo"></span>
+				</p>
+				<div class="passwordbox">
+					<input class="finpassword" type="password" name="" placeholder="输入资金密码">
+					<p class="perror"></p>
+				</div>
+				<a class="goTransfer yes">确定</a>
+			</div>
+		</div>
+	</div>
+@@include("./layout/footer.html")	
+	<script type="text/javascript" src="@@{jspath}/static/scripts/jquery.classyloader.min.js"></script>
+	<script src="@@{jspath}/static/scripts/public_personal.js"></script>
+	<script type="text/javascript" src="@@{jspath}/static/scripts/financialRecord.js"></script>
+</body>
+</html>

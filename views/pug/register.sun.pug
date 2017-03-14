@@ -1,0 +1,27 @@
+extends layout
+block header
+    +header("注册")
+block append header
+    link(rel="stylesheet" href=`${csspath}/static/styles/register.css`)
+        
+block body-middle
+    section.register_annc
+        h4
+            a(title="click to login")
+        form
+            div.row
+                input.inviter(placeholder="请输入介绍人账户名")
+            div.row
+                input.username(placeholder="请输入6-10位数字和小写字母的组合")
+            div.row
+                input.password(placeholder="请输入6-10位数字和小写字母的组合")
+            div.row.small
+                div.password_strong
+            div.row.small
+                input.passconf(placeholder="请再次输入密码")
+            div.row
+                input.captcha(placeholder="请输入验证码")
+                img(src="../static/images/register_captcha.png")
+                a.reset_captcha(href="") 换一个
+            div.row
+                button(type="submit")

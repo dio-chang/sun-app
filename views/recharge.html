@@ -1,0 +1,149 @@
+@@include("./layout/header.html" , {
+      tit:"充值",
+})
+	<link rel="stylesheet" type="text/css" href="@@{csspath}/static/styles/fundspublic.css">
+	<link rel="stylesheet" type="text/css" href="@@{csspath}/static/styles/progress-ring.css">
+	<link rel="stylesheet" type="text/css" href="@@{csspath}/static/styles/recharge.css">
+@@include("./layout/zichanLayout.html")
+		<input type="hidden" id="dataName">
+		<div class="main_b">
+			<ul class="schedule">
+				<li class="schedule1 add">选择支付模式</li>
+				<li class="schedule2">填写金额</li> 
+				<li class="schedule3">选择银行</li>
+				<li class="schedule4">充值到账</li>
+			</ul>
+			<div class="clear"></div>
+			<p class="progressBar"></p>
+			<div class="clear"></div>
+		</div>
+		<div class="rechargeBox">
+			
+			<div class="choose">
+				<p>选择充值模式：</p>
+				<ul class="paymentNav">
+				
+				</ul>
+				<script type="text/template" id="qudao">
+				<% _(data).each(function (v, k) { %>
+					<li class="qudao
+					<%if(k==0){%>
+						activechanle
+					<%}%>
+					" data-cid="<%=v.get('id')%> " data-name="<%=v.get('other_name')%>" data-min_money="<%=v.get('min_money')%>" data-max_money="<%=v.get('max_money')%>">
+					<%=v.get('show_name')%>
+
+					</li>
+				<% }) %>	
+				</script>
+				<div class="clear"></div>
+			</div>
+			
+			<div class="payment show" data-cid="">
+				<div class="computer">
+					<div class="comL"></div>
+					<div class="comm"><p class="normal_bg"></p><p class="caozuo_bg"></p></div>
+					<div class="comr"></div>
+					<p class="clear"></p>
+				</div>
+				<div class="computer zifubao" style="display: none">
+					<div class="zfbcl"><img src="@@{imgpath}/static/images/zfbpc.png"></div>
+					<div class="zfbcm"></div>
+					<div class="zfbcm blueafb"></div>
+					<div class="zfbcr"><img src="@@{imgpath}/static/images/zfbcard.png"></div>
+					<p class="clear"></p>
+				</div>
+				<div class="amount">
+					<span>充值金额：</span>
+					<span class="amountshuru">
+						<input id="amount" type="text" data-id="" data-bankcode="">
+						<p class="max_minmoney">*充值金额为<span class="min_money"><%=v.get('min_money')%></span>~<span class="max_money"><%=v.get('max_money')%></span>间的整数</p>
+					</span>
+					<br class="clear">
+					<span class="amouterr"></span>
+				</div>
+				<div class="clear"></div>
+
+				<div class="bankList">
+					<p>支付方式：</p>
+					<ul id="bank_list">
+					</ul>
+					<script type="text/template" id="bank">
+						<% _(data).each(function (v, k) { %>
+							<li class="bankCard" data-upstarttime="<%=v.get('upstarttime')%>" data-upendtime="<%=v.get('upendtime')%>" data-enable="<%=v.get('enable')%>" data-bankcode="<%=v.get('bankcode')%>">
+								<span class="icon"></span>
+								<span><img src="..<%=v.get('flag')%>"></span>
+							</li>
+						<% }) %>
+					</script>
+					<script type="text/template" id="Getbank">
+						<% _(data).each(function (v, k) { %>
+							<li class="bankCard" data-upstarttime="<%=v.get('upstarttime')%>" data-upendtime="<%=v.get('upendtime')%>" data-enable="<%=v.get('enable')%>" data-bankcode="<%=v.get('bankcode')%>">
+								<span class="icon"></span>
+								<span><img src="..<%=v.get('flag')%>"></span>
+							</li>
+						<% }) %>
+					</script>
+					<div class="clear"></div>
+					<!-- <div class="noCard">
+						<p>没有找到您需要的银行吗？<a href="javascript:;">点击显示全部银行</a></p>
+					</div> -->
+					<div class="rachargetips">
+						<p>［存款没到账］填错附言者请在交易记录页使用催到账功能进行自助办理，正确填写信息后存款将自动到账！<a class="" href="javascript:;">>立即催到账</a></p>
+						<p>［转错金额了］转错金额者需在此填多一个与实际转账金额一样的单子，然后再使用催到账功能自行办理。<a href="./help/deposit.html">>存款帮助</a></p>
+						<div class="clear"></div>
+					</div>
+					<input type="button" class="submit" value="提交">
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<div class="pob tijiao">
+		<h4><p>订单已提交</p><a href="javascript:;"></a></h4>
+		<div class="clear"></div>
+		<div class="pobcontent">
+			<p class="pobicon"></p>
+			<p class="pobcontent1">正在与第三方通信握手，请尽快充值</p>
+			<p class="pobtime">有效时间：<span>19:30</span></p>
+			<ul>
+				<li>1.成功付款后，将会自动到账，并弹出到账提示</li>
+				<li>2.长时间无反应，请联系客服</li>
+			</ul>
+		</div>
+	</div>
+	<div class="successpob pob">
+		<h4><p>充值成功</p><a href="javascript:;"></a></h4>
+		<div class="clear"></div>
+		<div class="pobcontent">
+			<p class="pobicon"></p>
+			<p class="pobcontent1">恭喜您，已有一笔第三方成功充值！</p>
+			<ul class="xiangqing">
+				<li>
+					<h4>100.00</h4>
+					<p>充值金额</p>
+				</li>
+				<li>
+					<h4>0.00</h4>
+					<p>返还手续费</p>
+				</li>
+				<li>
+					<h4>100.00</h4>
+					<p>实际到账</p>
+				</li>
+			</ul>
+			<div class="know">
+				<p class="iKnow">知道了</p>
+				<p class="rebate">再试一次</p>
+			</div>
+		</div>
+	</div>
+	<div id="mask"></div>
+@@include("./layout/footer.html")
+	<script type="text/javascript" src="@@{jspath}/static/scripts/jquery.classyloader.min.js"></script>
+	<script src="@@{jspath}/static/scripts/public_personal.js"></script>
+	<script type="text/javascript" src="@@{jspath}/static/scripts/recharge.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+@@include("./layout/header.html" , {
+      tit:"提款", 
+})
+<link rel="stylesheet" type="text/css" href="@@{csspath}/static/styles/fundspublic.css">
+<link rel="stylesheet" type="text/css" href="@@{csspath}/static/styles/progress-ring.css">
+<link rel="stylesheet" type="text/css" href="@@{csspath}/static/styles/reflect.css">
+	@@include("./layout/zichanLayout.html")
+		<div class="main_b">
+			<ul class="schedule">
+				<li class="schedule1 add">提交</li>
+				<li class="schedule2">审核</li>
+				<li class="schedule3">出款</li>
+				<li class="schedule4">到账</li>
+			</ul>
+			<div class="clear"></div>
+			<p class="progressBar"></p>
+			<div class="clear"></div> 
+		</div>
+		<div class="main_reflect"> 
+			<div class="bankBox">
+				<div class="amount">
+					<span class="tit">提款金额：</span>
+					<span class="amountshuru">
+						<input type="text" id="amount" autocomplete="off">
+					</span>
+					<div class="clear"></div>
+					<span class="error"></span>
+				</div>
+				<div class="chooseBank">
+					<p class="tit">选择银行卡：</p>
+					<div id="cardList">
+						
+					</div>
+					<script type="text/template" id="cardListtpl">
+						<% _(data).each(function (v, k) { %>
+							<div class="card" data-id="<%=v.get('id')%>">
+								<span class="icon"></span>
+								<p class="bankpic"><img src="@@{imgpath}/static/images/bank/<%=v.get('bankid')%>.png"></p>
+								<p>尾号：<span><%=v.get('cardnum')%></span></p>
+								<p class="manage">管理</p>
+								<div class="clear"></div>
+							</div>
+						<% }) %>
+					</script>
+					<div class="clear"></div>
+					<span class="carderror"></span>
+					<span class="addCard"> + 添加其他银行卡</span>
+					<div class="clear"></div>
+					<div class="fundsPassword">
+						<span class="tit">资金密码：</span>
+						<span class="passwordshuru">
+							<input type="password" id="fundspwd" autocomplete="off">
+							<i>*最低提款金额<b>100</b>元</i>
+						</span>
+						<div class="clear"></div>
+						<span class="error"></span>
+					</div>
+					<input class="sure submitbooking" type="button" name="" value="确定">
+				</div>
+				<div class="clear"></div>
+				
+			</div>
+			<div class="failure">
+				<p class="failureicon"></p>
+				<p>您的中心钱包余额尚未达到提款标准，</p> 
+				<p>提款金额最少为100.00元。</p>
+				<input type="button"  class="depositbtn" value="快速存款" name="" />
+			</div>
+			<div class="audit">
+				<h4>您的提款单已经提交</h4>
+				<div class="auditbox">
+					<p class="countdown"><span class="shi">2</span>:<span class="fen">59</span></p>
+					<p class="guinian">财务部门正在努力审核流水中~</p>
+					<p>如果银行信息填写错误，导致提现失败，资金将自动退还。</p>
+
+				</div>
+				<div class="successbox">
+					<p class="sucpic"><img src="@@{imgpath}/static/images/across.png"></p>
+					<p>财务妹纸正在办理提款，抽根烟后钱就到账了哦~</p>
+					<p>如果银行信息填写错误，导致提现失败，资金将自动退还。</p>
+				</div>
+				<ul>
+					<li>查询提款记录</li>
+					<li>再次提款</li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</div>	
+	</div>
+	<div class="pob addCardPob">
+		<h3><p>添加银行卡</p><span class="close"></span><div class="clear"></div></h3>
+		<p class="cardtext">
+			<span>银行卡昵称：</span>
+			<input id="bankNickname" placeholder="请输入银行卡昵称" type="text">
+			<br class="clear">
+			<span class="nicknameerr err"></span>
+		</p>
+		<p class="cardtext bankid">
+			<span>发卡银行：</span>
+			<select id="bank_name">
+				
+			</select>
+			<br class="clear">
+			<span class="bank_numerr err"></span>
+		</p>
+		<p class="cardtext usname">
+			<span>持卡人姓名：</span>
+			<input id="payeeName" placeholder="请输入持卡人姓名" type="text">
+			<br class="clear">
+			<span class="name_err err"></span>
+		</p>
+		<p class="cardtext cardnum">
+			<span>银行卡号：</span>
+			<input maxlength="23" type="text" placeholder="请输入16-19位银行卡号" id="cardNum">
+			<br class="clear">
+			<span class="cardnum_err err"></span>
+		</p>
+		<p class="cardtext liandong">
+			<span>开户行省市：</span>
+			<select id="bankpro"></select>
+			<select id="bankcity"></select>
+			<br class="clear">
+			<span class="proCityerr err"></span>
+		</p>
+		<p class="cardtext bankaddr">
+			<span>开户行：</span>
+			<textarea id="bankaddr" placeholder="请输入开户行"></textarea>
+			<br class="clear">
+			<span class="Bankserr err"></span>
+		</p>
+		<a class="goadd">确定</a>
+	</div>
+	<script type="text/template" id="banklist">
+		<% _(data).each(function (v, k) { %>
+			<option data-bankid="<%=v.get('id')%>"><%=v.get('title')%></option>
+		<% }) %>
+	</script>
+	<div class="transferpob pob">
+		<h3><p>消息</p><span class="close"></span><div class="clear"></div></h3>
+		<p class="transfercomfir">
+			请输入您的资金密码！
+		</p>
+		<div class="passwordbox">
+			<input class="finpassword" type="password" name="" placeholder="输入资金密码">
+			<p class="perror"></p>
+		</div>
+		<a class="yes">确定</a>
+	</div>
+	<div class="pob addrpob">
+		<h3><p>消息</p><span class="close"></span><div class="clear"></div></h3>
+		<dl>
+			<dt></dt>
+			<dd></dd>
+		</dl>
+		<a class="sure">确定</a>
+
+	</div>
+@@include("./layout/footer.html")
+	<script type="text/javascript" src="@@{jspath}/static/scripts/jquery.classyloader.min.js"></script>
+	<script type="text/javascript" src="@@{jspath}/static/scripts/selectUi.js"></script>
+	<script type="text/javascript" src="@@{jspath}/static/scripts/provinceAndCity.js"></script>
+	<script src="@@{jspath}/static/scripts/public_personal.js"></script>
+	<script type="text/javascript" src="@@{jspath}/static/scripts/reflect.js"></script>
+</body>
+</html>
