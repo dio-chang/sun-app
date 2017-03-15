@@ -229,3 +229,84 @@ div.title {
 .main-sun .num dt span {
     display: inline-block;
 }
+/* Slot Machine ***************************************************************/
+.banner-slotm {
+    width: 100%;
+    height: 319px;
+    background: url(../images/slotbanner-sun.png) top center no-repeat;
+}
+.main.sun-slotm {
+    background: none !important;
+    width: 100%;
+    text-align: center;
+}
+
+.main.sun-slotm  .main-container {
+    width: 1600px;
+    text-align: center;
+    background: url(../images/slotm-right-bg.png) top right no-repeat;
+    display: inline-block;
+}
+.main.sun-slotm .main_inner {
+    width: 800px;
+    display: inline-block;
+    vertical-align: top;
+}
+.main.sun-slotm .main_right {
+    background-size: cover;
+    width: 360px;
+    display: inline-block;
+    vertical-align: top;
+}
+.main.sun-slotm .prizePool {
+    height: 286px;
+}
+#num-roll .num div.isPicture {
+    
+    background-image: url(../images/slotm-pool-number.png) !important;
+}
+.main.sun-slotm .pool-title {
+    text-align: left;
+    font-size: 2em;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    background: -webkit-linear-gradient(white 40%, gray 60%, white 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.main.sun-slotm .sub_nav {
+    text-align: center;
+}
+.main.sun-slotm .content {width:800px; margin-top: 52px;}
+.main.sun-slotm .sub_nav li {
+    background: none !important;
+    border-bottom: 1px solid black;
+    position: absolute;
+    display: inline-block;
+    padding-top: 10px;
+    margin-top: 16px;
+    color: white !important;
+    font-weight: bold;
+    height: 40px !important;
+}
+.main.sun-slotm .sub_nav .hot {left: 0;}
+.main.sun-slotm .sub_nav .pt {left: 132px !important;}
+.main.sun-slotm .sub_nav .mg {left: 264px !important;}
+.main.sun-slotm .sub_nav .xin {left: 396px !important;}
+.main.sun-slotm .sub_nav li:hover, .main.sun-slotm .sub_nav li.cur {
+    border: 1px solid black;
+    border-bottom: none;
+}
+.main.sun-slotm .youhui {visibility: hidden}
+.main.sun-slotm .news {
+    right: -10px !important;
+    bottom: auto !important;
+}
+.p2-promotion ul li {
+    text-align: left;
+}
+.brown {background-color: #9D5830;}
+.brown p {color: #FFBA90;}
+.pink2 {background-color: #D84961;}
+.pink2 p {color: #FFB6E0;}
