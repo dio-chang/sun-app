@@ -279,6 +279,7 @@ div.title {
     text-align: center;
 }
 .main.sun-slotm .content {width:800px; margin-top: 52px;}
+.main.sun-slotm .contentList {background: transparent !important;}
 .main.sun-slotm .sub_nav li {
     background: none !important;
     border-bottom: 1px solid black;
