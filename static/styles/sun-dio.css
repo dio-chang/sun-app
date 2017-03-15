@@ -7,7 +7,7 @@
 body {
     background-color: #270307 !important;;
 }
-header{    background-color: #270307 !important;}
+header{    background-color: #270307 !important;height:175px;}
 .index-screen-01 {
     border-bottom: 0px solid #dde1e3;
     margin-bottom: 40px;
@@ -605,7 +605,15 @@ header {
     height: 26px;
     margin-right: 7px
 }
-
+.static-right ._vr_register {
+    color: #fff;
+    background: url(../images/btn-sun.png) no-repeat;
+    background-size: cover;
+    border: 0;
+    width: 70px;
+    height: 26px;
+    margin-right: 7px
+}
 .header-login .form-control {
     width: 180px;
     height: 26px;
