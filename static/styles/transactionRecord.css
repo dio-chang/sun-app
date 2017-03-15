@@ -1,3 +1,6 @@
+body{
+	background:#f7f7f8 !important;
+}
 .conditionalNav{
 	background: url(../images/bordert.png) no-repeat top left;
 }

@@ -1,4 +1,6 @@
+
 @charset "UTF-8";
+
 @-webkit-keyframes toggle {
   0% {
     opacity: 0;
@@ -16,6 +18,9 @@
   100% {
     opacity: 1;
   }
+}
+body{
+	background:#f7f7f8 !important;
 }
 .progress-ring {
   position: relative;

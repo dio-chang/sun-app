@@ -515,6 +515,7 @@ $(function(){
 			scrollTop:scroll_offset.top
 		},1000)
 **/
+	$(".navbar-nav").find("li").eq(2).addClass("activenav").siblings().removeClass("activenav")
 	$(".shiwan").on("click",function(){
 		$(this).hide()
 		$(".goPlay").show("slow")
