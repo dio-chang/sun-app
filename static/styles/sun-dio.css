@@ -104,7 +104,7 @@ body {
     margin-left: 30px
 }
 .index-rows-02 .float-left .super-number {
-    background: url(../images/super-number.png) no-repeat;
+    /*background: url(../images/super-number.png) no-repeat;*/
     height: 34px;
     margin-top: 20px;
     margin-left: 30px
@@ -128,34 +128,52 @@ body {
     position: absolute
 }
 .index-rows-02 .float-left .play-1 {
-    background: url(../images/fp1.jpg) no-repeat;
+    background: url(../images/fp1.png) no-repeat;
     width: 171px;
     height: 89px;
     display: inline-block;
-    margin-left: 30px
+    margin-left: 30px;
+    vertical-align: top;
+    color: #fff;
+    font-size: 15px;
+    padding-left: 15px;
+    line-height: 57px;
+	    transition: all 0.25s ease-in-out;
 }
 .index-rows-02 .float-left .play-1:hover {
-    background: url(../images/fp11.jpg)
+    background: url(../images/fp11.png) -12px -12px;
 }
 .index-rows-02 .float-left .play-2:hover {
-    background: url(../images/fp22.jpg)
+    background: url(../images/fp11.png) -12px -12px;
 }
 .index-rows-02 .float-left .play-3:hover {
-    background: url(../images/fp33.jpg)
+    background: url(../images/fp11.png) -12px -12px;
 }
 .index-rows-02 .float-left .play-2 {
-    background: url(../images/fp2.jpg) no-repeat;
+    background: url(../images/fp1.png) no-repeat;
     width: 171px;
     height: 89px;
     display: inline-block;
-    margin-left: 10px
+    margin-left: 10px;
+    vertical-align: top;
+    color: #fff;
+    font-size: 15px;
+    padding-left: 15px;
+    line-height: 57px;
+	    transition: all 0.25s ease-in-out;
 }
 .index-rows-02 .float-left .play-3 {
-    background: url(../images/fp3.jpg) no-repeat;
+    background: url(../images/fp1.png) no-repeat;
     width: 171px;
     height: 89px;
     display: inline-block;
-    margin-left: 10px
+    margin-left: 10px;
+    vertical-align: top;
+    color: #fff;
+    font-size: 15px;
+    padding-left: 15px;
+    line-height: 57px;
+	    transition: all 0.25s ease-in-out;
 }
 ._vr_nav .active {
     background: url(../images/menu-active.png) center bottom no-repeat;
@@ -169,23 +187,31 @@ body {
     background: url(../images/menu-download.png) 0 -25px no-repeat;
     width: 336px;
     height: 186px;
-    right: 0
+    right: 0;
 }
 .sub-client .link1 {
     width: 173px;
     height: 186px;
-    display: inline-block
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+    color: #333;
+
 }
 .sub-client .link1:hover {
-    background: url(../images/menu-download-active.png) 9px -25px no-repeat
+    background: url(../images/menu-download-active.png) 30px 7px no-repeat
 }
 .sub-client .link2 {
     width: 142px;
     height: 186px;
-    display: inline-block
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+    color: #333;
 }
+.ib {display:inline-block !important;}
 .sub-client .link2:hover {
-    background: url(../images/menu-download-active.png) -164px -25px no-repeat
+    background: url(../images/menu-download-active.png) -143px 7px no-repeat
 }
 .sub-sports {
     background: url(../images/menu-sport.png) 0 -25px no-repeat;
@@ -196,48 +222,167 @@ body {
 .sub-sports .link1 {
     width: 173px;
     height: 186px;
-    display: inline-block
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+    color: #333;
 }
+a.only-one {
+    margin-top: 85px;
+    margin-right: 40px;
+    text-align: right;
+    display: block;
+    color: #333;
+}
+.link1:hover a.only-one {
+	color:#eee;
+}
+a.only-one-1 {
+    margin-top: 75px;
+    margin-right: 40px;
+    text-align: right;
+    display: block;
+    color: #333;
+}
+a.only-one-2 {
+    margin-top: 5px;
+    margin-right: 40px;
+    text-align: right;
+    display: block;
+    color: #333;
+}
+
+.link1:hover a.only-one-1 {
+    color: #eee;
+}
+.link1:hover a.only-one-2 {
+    color: #eee;
+}
+
+a.one {
+    margin-top: 85px;
+    margin-right: 13px;
+    text-align: right;
+    display: block;
+    color: #333;
+}
+a.one-1 {
+    margin-top: 70px;
+    margin-right: 13px;
+    text-align: right;
+    display: block;
+    color: #333;
+}
+a.one-2 {
+    margin-top: 5px;
+    margin-right: 13px;
+    text-align: right;
+    display: block;
+    color: #333;
+}
+a.two {color:#333;margin-right:15px;text-align:right;}
+
+.link1:hover .one {
+	color:#eee;
+}
+
+.link2:hover .one,.link2:hover .two {
+	color:#eee;
+}
+
+.link3:hover .one {
+	color:#eee;
+}
+
+.link4:hover .one {
+	color:#eee;
+}
+
+.link1:hover .one-1 {
+	color:#eee;
+}
+
+.link2:hover .one-1 {
+	color:#eee;
+}
+
+.link3:hover .one-1 {
+	color:#eee;
+}
+
+.link4:hover .one-1 {
+	color:#eee;
+}
+
+.link1:hover .one-2 {
+	color:#eee;
+}
+
+.link2:hover .one-2 {
+	color:#eee;
+}
+
+.link3:hover .one-2 {
+	color:#eee;
+}
+
+.link4:hover .one-2 {
+	color:#eee;
+}
+
+
 .sub-sports .link1:hover {
-    background: url(../images/menu-sport-active.png) 0 -25px no-repeat
+    background: url(../images/menu-sport-active.png) 30px 7px no-repeat
 }
+
 .sub-sports .link2 {
     width: 142px;
     height: 186px;
-    display: inline-block
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+    color: #333;
+
 }
 .sub-sports .link2:hover {
-    background: url(../images/menu-sport-active.png) -173px -25px no-repeat
+    background: url(../images/menu-sport-active.png) -143px 7px no-repeat
 }
+
 .sub-live {
     background: url(../images/menu-live.png) 0 -19px no-repeat;
     width: 627px;
     height: 180px;
-    left: 275px
+    left: 275px;
 }
 .sub-live .link2,
 .sub-live .link3 {
-    height: 186px
+    height: 186px;
+
 }
 .sub-live .link1 {
     width: 173px;
     height: 186px;
-    display: inline-block
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
 }
 .sub-live .link2,
 .sub-live .link3,
 .sub-live .link4 {
     width: 143px;
-    display: inline-block
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+
 }
 .sub-live .link1:hover {
-    background: url(../images/menu-live-active.png) 0 -25px no-repeat
+    background: url(../images/menu-live-active.png) 26px 13px no-repeat
 }
 .sub-live .link2:hover {
-    background: url(../images/menu-live-active.png) -173px -25px no-repeat
+    background: url(../images/menu-live-active.png) -147px 13px no-repeat
 }
 .sub-live .link3:hover {
-    background: url(../images/menu-live-active.png) -316px -25px no-repeat
+    background: url(../images/menu-live-active.png) -290px 13px no-repeat
 }
 .sub-live .link4 {
     height: 186px
@@ -249,40 +394,54 @@ body {
 .sub-lottery,
 .sub-lottery .link1 {
     width: 202px;
-    height: 186px
+    height: 186px;
+    vertical-align: top;
+    text-align: right;
+
 }
 .sub-live .link4:hover {
-    background: url(../images/menu-live-active.png) -459px -25px no-repeat
+    background: url(../images/menu-live-active.png) -433px 13px no-repeat
 }
 .sub-chess {
     background: url(../images/menu-chess.png) 0 -25px no-repeat;
     left: 573px
 }
 .sub-chess .link1 {
-    display: inline-block
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
 }
 .sub-chess .link1:hover {
-    background: url(../images/menu-chess-active.png) 0 -25px no-repeat
+    background: url(../images/menu-chess-active.png) 30px 1px no-repeat
 }
 .sub-lottery {
     background: url(../images/menu-lottery.png) 0 -25px no-repeat;
     left: 722px
 }
 .sub-lottery .link1 {
-    display: inline-block
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+
 }
 .sub-lottery .link1:hover {
-    background: url(../images/menu-lottery-active.png) 0 -25px no-repeat
+    background: url(../images/menu-lottery-active.png) 30px 1px no-repeat
 }
 .sub-casino {
     background: url(../images/menu-casino.png) 0 -25px no-repeat;
-    left: 806px
+    left: 806px;
+    vertical-align: top;
+    text-align: right;
+
 }
 .sub-casino .link1 {
-    display: inline-block
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+
 }
 .sub-casino .link1:hover {
-    background: url(../images/menu-casino-active.png) 0 -25px no-repeat
+    background: url(../images/menu-casino-active.png) 30px 1px no-repeat
 }
 .sub-tiger {
     background: url(../images/menu-tiger.png) 0 -25px no-repeat;
@@ -293,22 +452,26 @@ body {
 .sub-tiger .link1 {
     width: 173px;
     height: 186px;
-    display: inline-block
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
 }
 .sub-tiger .link2,
 .sub-tiger .link3 {
     width: 143px;
     height: 186px;
-    display: inline-block
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
 }
 .sub-tiger .link1:hover {
-    background: url(../images/menu-tiger-active.png) 0 -25px no-repeat
+    background: url(../images/menu-tiger-active.png) 26px 7px no-repeat
 }
 .sub-tiger .link2:hover {
-    background: url(../images/menu-tiger-active.png) -173px -25px no-repeat
+    background: url(../images/menu-tiger-active.png) -147px 7px no-repeat
 }
 .sub-tiger .link3:hover {
-    background: url(../images/menu-tiger-active.png) -316px -25px no-repeat
+    background: url(../images/menu-tiger-active.png) -290px 7px no-repeat
 }
 .sub-tryPlay {
     background: url(../images/menu-tryplay.png) 0 -25px no-repeat;
@@ -506,6 +669,9 @@ a.tip-forget {
 .index-notice {
     background: url(../images/noticebg-sun.png) center no-repeat;
     background-size: cover;
+    margin-top: 0px;
+}
+.index-notice-div {
     margin-top: -34px;
 }
 .notice .notice-list {
@@ -568,7 +734,19 @@ a.tip-forget {
 
 }
 
-
+.index-rows-03 h3 {
+	text-align: center;
+    font-size: 14px;
+    color: #eee;
+    margin-top: 135px;
+    padding-right: 25px;
+}
+.index-rows-03 p {
+	color:#7d6f71;
+   line-height: 30px;
+    text-align: center;
+    padding-right: 25px;
+}
 
 .index-rows-04 {
     min-height: 500px;
@@ -654,4 +832,130 @@ a.tip-forget {
 }
 .modal-backdrop.in {
     opacity: .7 !important;
+}
+
+.index-rows-01 .title {
+    color: #f39c51;
+    text-align: center;
+    margin-top: -50px;
+    font-size: 16px;
+}
+
+.index-rows-01 .link:hover .title {
+    color: #eee;
+}
+.n1 {
+    background: url(../images/numbers.png) 3px 0px no-repeat;
+    height: 30px;
+    width: 20px;
+    display: inline-block;
+}
+.n2 {
+    background: url(../images/numbers.png) -40px 0px no-repeat;
+    height: 30px;
+    width: 20px;
+    display: inline-block;
+}
+
+.n3 {
+    background: url(../images/numbers.png) -80px 0px no-repeat;
+    height: 30px;
+    width: 20px;
+    display: inline-block;
+}
+
+.n4 {
+    background: url(../images/numbers.png) -109px 0px no-repeat;
+    height: 30px;
+    width: 20px;
+    display: inline-block;
+}
+
+
+.n5 {
+    background: url(../images/numbers.png) -140px 0px no-repeat;
+    height: 30px;
+    width: 20px;
+    display: inline-block;
+}
+.n6 {
+    background: url(../images/numbers.png) -170px 0px no-repeat;
+    height: 30px;
+    width: 20px;
+    display: inline-block;
+}
+.n7 {
+    background: url(../images/numbers.png) -200px 0px no-repeat;
+    height: 30px;
+    width: 20px;
+    display: inline-block;
+}
+
+.n8 {
+    background: url(../images/numbers.png) -230px 0px no-repeat;
+    height: 30px;
+    width: 20px;
+    display: inline-block;
+}
+.n9 {
+    background: url(../images/numbers.png) -261px -3px no-repeat;
+    height: 30px;
+    width: 20px;
+    display: inline-block;
+}
+.n0 {
+    background: url(../images/numbers.png) -295px 0px no-repeat;
+    height: 30px;
+    width: 20px;
+    display: inline-block;
+}
+.n-end {
+    background: url(../images/numbers.png) -63px 0px no-repeat;
+    height: 30px;
+    width: 10px;
+    display: inline-block;
+}
+.n-dot {
+    background: url(../images/numbers.png) -20px -3px no-repeat;
+    height: 30px;
+    width: 10px;
+    display: inline-block;
+}
+
+.header-panel>a, .static-btn {
+    color: #bd5f5f;
+    margin: 0 10px;
+    text-shadow: 0 1px 0 #000;
+}
+
+.hy {color:#f39c51;}
+.header-panel>._vr_nickname {
+    background: url();
+    padding: 0px;
+    margin: 0 5px;
+	color:#f39c51;
+}
+.dropdown-menu {
+	background-color:#fff;
+}
+.dropdown-menu>li>a {
+    color: #333;
+}
+.header-panel .members-dropdown>li>a:focus, .header-panel .members-dropdown>li>a:hover {
+    color: #333;
+    background-color: rgba(0,0,0,.1);
+}
+.header-panel>._vr_notice {
+    width: 18px;
+    height: 18px;
+    background: url(../images/newsbgs.png) center 8px no-repeat;
+    display: inline-block;
+    padding-bottom: 30px;
+    text-align: center;
+    margin-left: 0;
+    color: #fff;
+}
+.logOut {
+    background: url(../images/ic-log-out.png) 2px 2px no-repeat;
+	padding-left:20px;
 }
