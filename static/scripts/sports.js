@@ -2,7 +2,7 @@ $(function() {
 	document.getElementById('sportFrame').contentWindow.location.replace(RootUrl+"/?d=api&c=game&m=entergame&pid=29&gametype=3")
 	$("body").addClass("sports-page")
 
-	$(".navbar-nav").find("li").eq(2).addClass("activenav").siblings().removeClass("activenav")
+	$(".navbar-nav").find("li").eq(1).addClass("activenav").siblings().removeClass("activenav")
 	var dateTimeFromat = "";
 
 	function maintainCheck() {

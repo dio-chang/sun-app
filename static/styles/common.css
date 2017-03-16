@@ -250,6 +250,7 @@ main{background-color:#f7f7f8;}
 .navbar-default .navbar-nav>.tryPlay>a{
 	color: #fff;
 }
+/*
 .tryPlay{
 	background:#43c58f url(../images/tryPlaynav.png) no-repeat 0px 0px;
 }
@@ -263,6 +264,7 @@ main{background-color:#f7f7f8;}
 .tryPlay a:hover{
 	background:url(../images/tryPlaynav.png) no-repeat 0px 0px;
 }
+*/
 /* 返利数字 */
 .num-dot,.num-pre,.num-single,.num-decimal{height:100px;position:relative;display:inline-block;background:url(../images/navbar-sub-sprite.png) no-repeat;}
 .num-dot{width:12px;background-position:-800px 0;}

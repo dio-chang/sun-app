@@ -1,6 +1,7 @@
 @@include("./layout/header-sun.html" , {
       tit:"首页", 
   })
+  	<link rel="stylesheet" type="text/css" href="@@{csspath}/static/styles/slotMachine.css">
     <link rel="stylesheet" href="@@{csspath}/static/styles/ued-index.css">
 	<style>
 	.index-notice {
@@ -49,24 +50,10 @@
 		<div class="container">
 			<div class="float-left">
 				<p class="super-money"></p>
-				<p class="super-number">
-
-				<span class="n5"></span>
-				<span class="n1"></span>
-				<span class="n2"></span>
-				<span class="n-dot"></span>
-				<span class="n3"></span>
-				<span class="n4"></span>
-				<span class="n6"></span>
-				<span class="n-dot"></span>
-				<span class="n7"></span>
-				<span class="n8"></span>
-				<span class="n9"></span>
-				<span class="n-end"></span>
-				<span class="n0"></span>
-				<span class="n0"></span>
-							
-				</p>
+				<div class="super-number">
+					<div id="num-roll"></div>
+	
+				</div>
 
 			</div>
 			<div class="float-left">
@@ -92,7 +79,10 @@
 
 <script src="@@{jspath}/static/scripts/gui-ued.min.js"></script>
 <script src="@@{jspath}/static/scripts/jquery.knob.min.js"></script>
+<script type="text/javascript" src="@@{jspath}/static/scripts/num-2-pic.js"></script>
+<script type="text/javascript" src="@@{jspath}/static/scripts/slotMachine.js"></script>
 <script src="@@{jspath}/static/scripts/jquery.validate.extend.msites.js"></script>
 <script src="@@{jspath}/static/scripts/ued-index.js"></script>
+
 </body>
 </html>

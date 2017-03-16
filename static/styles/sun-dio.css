@@ -567,10 +567,10 @@ a.two {color:#333;margin-right:15px;text-align:right;}
 .navbar-nav>.tryPlay.activenav>a,
 .tryPlay,
 .tryPlay.activenav {
-    background: url();
+    /*background: url();*/
 }
 .tryPlay a:hover {
-    background: url();
+   /* background: url();*/
 }
 header {
     position: relative;
@@ -674,7 +674,10 @@ a.tip-forget {
     margin-top: -92px;
     margin-left: 0;
     z-index: 100;
+	/*
     position: absolute;
+	*/
+    position: fixed;
     left: inherit;
     right: 0px;
 }
@@ -787,7 +790,7 @@ a.tip-forget {
 
 .footer-bar {
     height: 50px;
-    background: url(../images/footer-line.png) no-repeat center top;
+    background: url(../images/footer-line.png) no-repeat center top !important;
     margin-top: 0px;
 	padding:20px 10px;
 	font-family:'Microsoft Yahei', sans-serif,'Helvetica Neue', 'Helvetica';
@@ -1019,4 +1022,18 @@ a.tip-forget {
     margin-top: 10px;
 	color:#fff;
 	text-align: center;
+}
+
+#num-roll .dou, #num-roll .dou1, #num-roll .dou2 {
+color:#fff !important;
+}
+.gameBox {
+margin-bottom:10px !important; 
+}
+.sports-page {
+    background: transparent ;
+}
+
+.link1,.link2,.link3,.link4 {
+cursor: pointer;
 }

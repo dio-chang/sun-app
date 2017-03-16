@@ -2,13 +2,13 @@ body{
 	background:url(../images/trygameBg.png) no-repeat center 209px;
 }
 .container{margin-top:-1px;}
-.footer-bar{background: none;}
+/*.footer-bar{background: none;}*/
 .navbar-collapse{
 	margin: 0px;
 }
 .gameBox{
 	width: 1200px;
-	min-height: 600px;	
+	min-height: 662px;	
 	margin: auto;
 	position: relative;
 	margin-top:10px;
