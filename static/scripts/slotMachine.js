@@ -1,4 +1,4 @@
-$(".navbar-nav").find("li").eq(3).addClass("activenav").siblings().removeClass("activenav")
+$(".navbar-nav").find("li").eq(4).addClass("activenav").siblings().removeClass("activenav")
 var timer = null
 function toScroll(){ 
 	var scrollTo=3987654321;

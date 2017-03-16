@@ -1,19 +1,21 @@
 body{
-	background:url(../images/trygameBg.jpg) no-repeat center 90px;
+	background:url(../images/trygameBg.png) no-repeat center 209px;
 }
 .container{margin-top:-1px;}
-.footer-bar{background: none;}
+/*.footer-bar{background: none;}*/
 .navbar-collapse{
 	margin: 0px;
 }
 .gameBox{
 	width: 1200px;
-	min-height: 600px;	
+	min-height: 662px;	
 	margin: auto;
 	position: relative;
+	margin-top:10px;
+	margin-bottom:30px;
 }
 .gameright{
-	width: 196px;
+	width: 197px;
 	height: 650px;
 	position: absolute;
 	top: 0px;
@@ -25,15 +27,16 @@ body{
 	margin: 18px 0px 12px 0px
 }
 .gameright dl dd a{
-	height: 47px;
-	line-height: 47px;
-	width: 161px;
+	height: 50px;
+	line-height: 50px;
+	width: 164px;
 	display: block;
 	background: url(../images/tryButton.png) no-repeat;
 	margin-left: 18px;
 	text-align: center;
 	color:#fff;
 	font-size: 16px;
+	margin-top:110px;
 }
 
 .news_inner ul{
@@ -54,7 +57,7 @@ body{
 	line-height: 24px;
 }
 .box p{
-	color: #9acfff;
+	color: #f39c51;
 	font-size: 13px;
 }
 .box p span{

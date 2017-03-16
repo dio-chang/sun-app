@@ -10,7 +10,7 @@ $(function(){
 		loaded()
 	},2000)
 	$("#gameFrame").attr("src",RootUrl+"/?d=api&c=game&m=trygame&pid="+pid)
-	$(".navbar-nav").find("li").eq(8).addClass("activenav").siblings().removeClass("activenav")
+	$(".navbar-nav").find("li").eq(7).addClass("activenav").siblings().removeClass("activenav")
 	
 	$(".close").on("click",function(){
 		$(this).parents(".box").remove()

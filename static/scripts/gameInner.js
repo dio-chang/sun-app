@@ -16,10 +16,10 @@ $(function(){
 	},2000)
 	if(type=="ag"){
 		$("#gameFrame").attr("src",RootUrl+"?d=api&c=game&m=entergame&pid=24&gametype=6")
-		$(".navbar-nav").find("li").eq(6).addClass("activenav").siblings().removeClass("activenav")
+		$(".navbar-nav").find("li").eq(3).addClass("activenav").siblings().removeClass("activenav")
 	}else if(gametype==0||gametype==1||gametype=="bal"){
 		$("#gameFrame").attr("src",RootUrl+"?d=api&c=game&m=entergame&pid="+pid+"&gametype="+gametype)
-		$(".navbar-nav").find("li").eq(1).addClass("activenav").siblings().removeClass("activenav")
+		$(".navbar-nav").find("li").eq(2).addClass("activenav").siblings().removeClass("activenav")
 		$('title').html("游戏--"+gameTitle)
 	}else if(gametype=="goTrygame"){
 		$("#gameFrame").attr("src","http://cache.download.banner.powerplay88.com/flash/72/launchcasino.html?game="+game+"&language=Zh-cn&mode=offline#"+game)
@@ -29,8 +29,9 @@ $(function(){
 		$('title').html("游戏--"+gameTitle)
 	}else{
 		$("#gameFrame").attr("src",RootUrl+"?d=api&c=game&m=entergame&pid="+pid+"&gametype="+gametype)
-		$(".navbar-nav").find("li").eq(3).addClass("activenav").siblings().removeClass("activenav")
+		$(".navbar-nav").find("li").eq(2).addClass("activenav").siblings().removeClass("activenav")
 		$('title').html("游戏--"+gameTitle)
 	}
+		
 	
 })

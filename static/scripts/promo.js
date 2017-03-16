@@ -1,5 +1,5 @@
 $(function() {
-	$(".navbar-nav").find("li").eq(7).addClass("activenav").siblings().removeClass("activenav")
+	$(".navbar-nav").find("li").eq(9).addClass("activenav").siblings().removeClass("activenav")
 	$("div [data-code=content] ._vr_promo_join").remove();
 	$(".sidePromo dd").fadeOut(0);
 	$(".sidePromo dt").click(function() {

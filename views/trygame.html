@@ -1,14 +1,14 @@
-@@include("./layout/header.html" , {
+@@include("./layout/header-sun.html" , {
       tit:"游戏试玩",
 })
 @@include("./layout/noticeLayout.html")
 	<link rel="stylesheet" type="text/css" href="@@{csspath}/static/styles/trygame.css">
 	<div class="gameBox">
-		<iframe scrolling="no" id="gameFrame" frameborder="0" allowtransparency="true" style="width: 1000px; min-height:800px; display: block" src=""></iframe>
+		<iframe scrolling="no" id="gameFrame" frameborder="0" allowtransparency="true" style="width: 1000px; min-height:643px; display: block" src=""></iframe>
 		<div class="gameright">
 			<dl>
-				<dt><img src="@@{imgpath}/static/images/tryball.png"></dt>
-				<dd><a href="@@{views}register.html">立即开户</a></dd>
+				<dt><!--<img src="@@{imgpath}/static/images/tryball.png">--></dt>
+				<dd><a href="@@{views}register.html"></a></dd>
 			</dl>
 			<div class="news">
 				<div class="news_inner">
@@ -52,7 +52,7 @@
 			</li>
 		<% }) %>
 	</script>
-@@include("./layout/footer.html")	
+@@include("./layout/footer-sun.html")	
 <script src="@@{jspath}/static/scripts/jquery.kxbdMarquee.js"></script>
 <script type="text/javascript" src="@@{jspath}/static/scripts/trygame.js"></script>
 </body>
