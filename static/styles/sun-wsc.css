@@ -108,12 +108,33 @@ div.title {
     height: 70px;
     display: inline-block;
 }
+.register ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    white;
+    opacity: .6;
+    text-align: center;
+}
+.register :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    white;
+    opacity: .6;
+    text-align: center;
+}
+.register ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    white;
+    opacity: .6;
+    text-align: center;
+}
+.register :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:    white;
+    opacity: .6;
+    text-align: center;
+}
 .register legend span {
-    color: #999 !important;
+    color: white !important;
+    opacity: .8;
     letter-spacing:2px;
 }
 .register legend span.hasnumber {
-    color: #FFF !important;
+    opacity: 1;
 }
 .register legend {
     border-bottom: none;
