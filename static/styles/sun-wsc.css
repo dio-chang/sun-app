@@ -18,11 +18,14 @@
     margin-bottom: 10px;
 }
 .p2-block .rule {
-    margin: 20px 0 0 258px;
-    position: absolute;
-    width: 125px;
+    float:right;
+    width: 160px;
     display: block;
-    height: 170px;
+    height: 223px;
+    background: url(../images/entertainment-rule.png) top right no-repeat;
+}
+.p2-block .rule:hover {
+    background-position: 0 -224px;
 }
 .p2-block .start {
     margin: 135px 0 0 44px;
@@ -31,10 +34,18 @@
     display: block;
     height: 40px;
 }
-.p2-pt {background-image: url(../images/p2_pt.png);}
-.p2-ag {background-image: url(../images/p2_ag.png);}
-.p2-mg {background-image: url(../images/p2_mg.png);}
-.p2-bbin {background-image: url(../images/p2_bbin.png);}
+.p2-pt {background-image: url(../images/entertainment-pt.png);}
+.p2-pt:before, .p2-ag:before, .p2-mg:before, .p2-bbin:before {
+    content: "进入游戏";
+    position:absolute;
+    color: white;
+    top: 138px;
+    display: inline-block;
+    left: 50px;
+}
+.p2-ag {background-image: url(../images/entertainment-ag.png);}
+.p2-mg {background-image: url(../images/entertainment-mg.png);}
+.p2-bbin {background-image: url(../images/entertainment-bbin.png);}
 .p2-experience {
     background: url(../images/p2_experience.gif) no-repeat;
 }
@@ -283,7 +294,7 @@ div.title {
     height: 286px;
 }
 #num-roll .num div.isPicture {
-    
+
     background-image: url(../images/slotm-pool-number.png) !important;
 }
 .main.sun-slotm .pool-title {
