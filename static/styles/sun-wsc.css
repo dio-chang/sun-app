@@ -384,7 +384,7 @@ div.title {
 }
 .main.sun-slotm .youhui {visibility: hidden}
 .main.sun-slotm .news {
-    right: -10px !important;
+    right: 0px !important;
     bottom: auto !important;
 }
 .p2-promotion ul li {
