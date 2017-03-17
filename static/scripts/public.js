@@ -209,6 +209,7 @@ if(Sys.ie){
     }
 }
 var onOff = false;
+/*
 $(".right_qq").click(function(){
     $(".phoneBox").html("")
     $(".phoneBox").animate({
@@ -233,9 +234,45 @@ $(".right_qq").click(function(){
         onOff=false
         return false;
     }
-})
+})*/
+$(".right_qq,.qqBox").hover(function(){
+        $(".qqBox").html("876731458")
+        $(".qqBox").stop().animate({
+            width:"186px",
+            left:"-150px",
+            opacity:1
+        })
+},function (){
+        $(".qqBox").html("")
+        $(".qqBox").stop().animate({
+            width:0,
+            left:0,
+            opacity:0
+        })
+
+
+});
 
 var qqOnoff = false;
+$(".right_phone,.phoneBox").hover(function(){
+        $(".phoneBox").html("+6309150765566")
+        $(".phoneBox").stop().animate({
+            width:"186px",
+            left:"-150px",
+            opacity:1
+        })
+},function (){
+        $(".phoneBox").html("")
+        $(".phoneBox").stop().animate({
+            width:0,
+            left:0,
+            opacity:0
+        })
+
+
+});
+
+/*
 $(".right_phone").click(function(){
     $(".qqBox").html("")
     $(".qqBox").animate({
@@ -245,7 +282,7 @@ $(".right_phone").click(function(){
     if(qqOnoff==false){
         $(".phoneBox").html("+6309150765566")
         $(".phoneBox").animate({
-            width:"187px",
+            width:"186px",
             left:"-130px",
             opacity:1
         })
@@ -262,7 +299,7 @@ $(".right_phone").click(function(){
         qqOnoff = false;
         return false;
     }
-})
+})*/
 
 function loading(){
     $(".loadingGif").show();

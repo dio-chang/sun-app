@@ -11,10 +11,13 @@
     <section class="index-slide">
       <div class="slide-inner">
         <div class="sl_img _vr_carousels_check banner1" style="background:url(@@{imgpath}/static/images/banner1-sun.jpg) 50% 50% no-repeat;" starttime="1474267757000" endtime="33031209599000" showindex="1"></div>
-        <div class="sl_img _vr_carousels_check banner2" style="background:url(@@{imgpath}/static/images/banner2.jpg) 50% 50% no-repeat;" starttime="1473861507000" endtime="33032159999000" showindex="2"></div>
+<!--
+		<div class="sl_img _vr_carousels_check banner2" style="background:url(@@{imgpath}/static/images/banner2.jpg) 50% 50% no-repeat;" starttime="1473861507000" endtime="33032159999000" showindex="2"></div>
         <div class="sl_img _vr_carousels_check banner3" style="background:url(@@{imgpath}/static/images/banner3.jpg) 50% 50% no-repeat;" starttime="1473861614000" endtime="33032159999000" showindex="3"></div> 
-      </div>
+-->
+	  </div>
       <div class="slide-indicators">
+			<!--
     		<div class="_vr_carousels_check sl_icon" style="background:url(@@{imgpath}/static/images/index-ban-icon-02.png)" starttime="1482723906000" endtime="33031209599000">
     		<input type="text" class="ctc_btn">
     		</div>
@@ -24,6 +27,7 @@
     		<div class="_vr_carousels_check sl_icon" style="background:url(@@{imgpath}/static/images/index-ban-icon-01.png)" starttime="1473861614000" endtime="33032159999000">
     		<input type="text" class="ctc_btn">
     		</div>
+			-->
 	    </div>
     </section>
 	<div class="index-notice-div">
@@ -31,16 +35,16 @@
   </div>
 	<section class="index-rows-01">
 		<div class="container">
-			<a href="#" class="link link-1">
+			<a href="@@{views}sports.html" class="link link-1">
 				<p class="title">体育</p>
 			</a>
-			<a href="#" class="link link-2">
+			<a href="@@{views}game.html?d=api&c=game&m=entergame&pid=18&gametype=0&gameTitle=AG娱乐城" class="link link-2">
 				<p class="title">真人娱乐</p>
 			</a>
-			<a href="#" class="link link-3">
+			<a href="@@{views}slotMachine.html" class="link link-3">
 				<p class="title">老虎机</p>
 			</a>
-			<a href="#" class="link link-4">
+			<a href="@@{RootUrl}?d=api&c=game&m=entergame&pid=23&gametype=3" target="_blank" class="link link-4">
 				<p class="title">彩票</p>
 			</a>
 		</div>
@@ -58,13 +62,13 @@
 			</div>
 			<div class="float-left">
 				<p class="free-play"></p>
-				<a href="#" class="play-1">
+				<a href="@@{views}trygame.html?d=api&c=game&m=trygame&pid=18" class="play-1">
 					<p>试玩百家乐</p>
 				</a>
-				<a href="#" class="play-2">
+				<a href="@@{views}trygame.html?d=api&c=game&m=trygame&pid=19" class="play-2">
 					<p>试玩老虎机</p>				
 				</a>
-				<a href="#" class="play-3">
+				<a href="@@{views}trygame.html?d=api&c=game&m=trygame&pid=24" class="play-3">
 					<p>试玩捕鱼王</p>
 				</a>
 			
@@ -74,6 +78,16 @@
 	</section>	
 
   </main>
+
+  <div class="left-av">
+	<a href="javascript:void(0)l;" onclick="$('.left-av').hide();" class="close"></a>
+  	<a href="http://chat.livechatvalue.com/chat/chatClient/chatbox.jsp?companyID=651273&amp;configID=45233&amp;jid=8622492600" target="_blank" class="btn"></a>
+  </div>
+
+  <div class="right-av">
+	<a href="javascript:void(0)l;" onclick="$('.right-av').hide();" class="close"></a>
+  	<a href="http://chat.livechatvalue.com/chat/chatClient/chatbox.jsp?companyID=651273&amp;configID=45233&amp;jid=8622492600" target="_blank" class="btn"></a>
+  </div>
   
 @@include("./layout/footer-sun.html") 
 
