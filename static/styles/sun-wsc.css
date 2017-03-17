@@ -2,6 +2,13 @@
 /*
 .index-slide {height: 318px !important;}
 .slide-inner {height: 320px !important;}*/
+.entertainment .banner:before {
+    content: "";
+    width: 100%;
+    height: 316px;
+    position: absolute;
+    background: linear-gradient(to right, rgba(39,3,7,1) 0%, rgba(39,3,7,0) 5%, rgba(39,3,7,0) 5%,rgba(39,3,7,1));
+}
 .index-screen-01 {margin-top: 1em;}
 .p2-left-box {width: 408px !important; margin-right: 10px}
 .p2-center-box {width: 408px !important; margin-right: 10px}
@@ -181,6 +188,7 @@ div.title {
     background: url(../images/register_success_bg.png) top center no-repeat;
     height: 480px;
 }
+
 .banner-sun .inner dt {
     padding-top: 65px !important;
 }
@@ -267,16 +275,40 @@ div.title {
     height: 285px;
     background: url(../images/slotbanner-sun.png) top center no-repeat;
 }
+.banner-slotm:before {
+    content: "";
+    width: 100%;
+    height: 285px;
+    position: absolute;
+    background: linear-gradient(to right, rgba(39,3,7,1) 0%, rgba(39,3,7,0) 5%, rgba(39,3,7,0) 5%,rgba(39,3,7,1));
+}
 .main.sun-slotm {
     background: none !important;
     width: 100%;
     text-align: center;
 }
-
+.main.sun-slotm:before {
+    background: url(../images/slotm-right-bg.png) no-repeat;
+    background-position-y: 40%;
+    background-position-x: 107%;
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 1200px;
+    z-index: -1;
+}
+.main.sun-slotm .prizePool {
+    float: none !important;
+    margin-left: 4em;
+}
+.main.sun-slotm .p2-promotion li{
+    color: #bd5f5f !important;
+}
 .main.sun-slotm  .main-container {
-    width: 1600px;
+    width: 1200px;
     text-align: center;
-    background: url(../images/slotm-right-bg.png) top right no-repeat;
     display: inline-block;
 }
 .main.sun-slotm .main_inner {
@@ -327,6 +359,25 @@ div.title {
 .main.sun-slotm .sub_nav .pt {left: 132px !important;}
 .main.sun-slotm .sub_nav .mg {left: 264px !important;}
 .main.sun-slotm .sub_nav .xin {left: 396px !important;}
+.main.sun-slotm .sub_nav .lastfix {
+    left: 522px !important;
+    height: 42px;
+    margin-top: 14px;
+    position: absolute;
+    width: 200px;
+    border-bottom: 1px solid black;
+    border-image: linear-gradient(to right, black, transparent) 1 0%;
+}
+.main.sun-slotm .sub_nav .lastfix:before2 {
+    content: "";
+    height: 40px;
+    width: 100%;
+    display: inline-block;
+    margin-top: 1px;
+    /*background: linear-gradient(to right, rgba(39,3,7,1) 0%, rgba(39,3,7,0) 100%);*/
+    
+    background: linear-gradient(to right, rgba(39,3,7,0) 0%, rgba(39,3,7,1) 100%);
+}
 .main.sun-slotm .sub_nav li:hover, .main.sun-slotm .sub_nav li.cur {
     border: 1px solid black;
     border-bottom: none;
