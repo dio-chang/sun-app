@@ -1105,3 +1105,65 @@ cursor: pointer;
 }
 .link .reg {color:#fff;}
 .sports-box,.sports,.gameBox{background-color: #200000 !important;}
+
+
+
+.help {
+	/*
+	background: #270307 url(../images/helpbg.png) no-repeat top  !important;
+	background-size: cover !important;*/
+	background-color:#270307 !important;
+}
+
+.help-box {
+/*
+	position: relative;
+    margin: 20px auto;*/
+	background: #270307 url(../images/helpbg-left.png) 0 0 no-repeat !important;
+    border: 0px solid #d3d3d3; 
+}
+
+.hp-article {
+    color: #fff !important;
+}
+.hp-article p {
+    color: #ae5656 !important;
+}
+.help .hp-content {
+    background: url() !important;
+	border-left: 0px solid #D3D3D3 ;
+}
+.help .ft {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    margin: 20px 0 10px;
+    width: 100%;
+    height: 18px;
+    background: url() center no-repeat;
+}
+.help .nav-1 .li-1 {
+    background: url() no-repeat;
+}
+.help .nav-2 {
+    background: transparent; 
+     border-bottom: 0px solid #e4e4e4; 
+}
+.help .hp-nav .nav-2 .active, .help .hp-nav .nav-2 .active:hover {
+    color: #FFF;
+    background: transparent;
+}
+.help .hp-nav a {
+    color: #cd6969;
+}
+.help .hp-nav .nav-1 .active, .help .hp-nav a:hover {
+    color: #FFF;
+}
+.help .nav-2 a:hover {
+    background: transparent;
+}
+
+.hp-article .main-bd a {
+    color: #FFF;
+    text-decoration: underline;
+}
