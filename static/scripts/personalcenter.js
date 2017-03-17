@@ -189,7 +189,7 @@ $(function(){
 		var oldfundspassword = $(".oldfundspassword").val()
 		var newfundspassword = $(".newfundspassword").val()
 		var pronewfundspassword = $(".pronewfundspassword").val()
-		if()
+		//if()
 		if(newfundspassword==""){
 			$(".newfundspassword").parent("div").addClass("redbor")
 			$(".newfundspassword").siblings(".error").html("新密码不能为空")

@@ -39,6 +39,7 @@ $(function(){
                     },
                     type:"POST",
                     success: function (collection, xhr) {
+						console.log(collection, xhr);
                     	if(xhr.status==1){
 	                		$(el).html(template({data:collection.models}));
 	                		$(".news_inner").kxbdMarquee({direction:"up",isEqual:false});

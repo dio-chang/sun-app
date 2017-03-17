@@ -710,7 +710,7 @@ a.tip-forget {
 
 .index-rows-03 {
     height: 220px;
-    background: url(../images/mod4-bg.png) no-repeat;
+    background: url(../images/mod4-bg.png) center top no-repeat;
     margin-top: 0px
 }
 .index-rows-03 .link:before {
@@ -1103,3 +1103,5 @@ cursor: pointer;
 	left: 112px;
     bottom: 78px;
 }
+.link .reg {color:#fff;}
+.sports-box,.sports,.gameBox{background-color: #200000 !important;}
