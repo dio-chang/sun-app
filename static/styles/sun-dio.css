@@ -3,6 +3,7 @@
 }
 .navbar-default {
     background-color: transparent !important;
+	height: 143px;
 }
 body {
     background-color: #270307 !important;;
