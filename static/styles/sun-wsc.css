@@ -108,6 +108,21 @@
 .register {
     background: url(../images/register_annc_bg.png) no-repeat center top;
 }
+.register .frame input {
+	border: 1px solid #DB937C;
+	color: white;
+	background: rgba(255,255,255,.1);
+}
+.register .frame button {
+	border-width: 1px; 
+	border-style: solid; 
+	-webkit-border-image: -webkit-gradient(linear, 100% 0, 0 0, from(#B14547), to(#F6C59E)) 1 100%; 
+	-webkit-border-image: -webkit-linear-gradient(right, #B14547, #F6C59E 75%, #B14547) 1 100%; 
+	-moz-border-image: -moz-linear-gradient(right, #B14547, #F6C59E 75%, #B14547) 1 100%; 
+	-o-border-image: -o-linear-gradient(right, #B14547, #F6C59E 75%, #B14547) 1 100%; 
+	border-image: linear-gradient(to right, #B14547, #F6C59E 75%, #B14547) 1 100%; 
+	border-image: linear-gradient(to right, #B14547, #F6C59E 75%, #B14547);
+}
 .register-box {
     background-color: transparent;
     text-align: center;
