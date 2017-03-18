@@ -302,7 +302,7 @@ div.title {
     width: 100%;
     text-align: center;
 }
-.main.sun-slotm:before {
+/*.main.sun-slotm:before {
     background: url(../images/slotm-right-bg.png) no-repeat;
     background-position-y: 40%;
     background-position-x: 107%;
@@ -313,11 +313,11 @@ div.title {
     height: 100%;
     min-width: 1200px;
     z-index: -1;
-}
-.main.sun-slotm .prizePool {
+}*/
+/*.main.sun-slotm .prizePool {
     float: none !important;
     margin-left: 4em;
-}
+}*/
 .main.sun-slotm .p2-promotion li{
     color: #bd5f5f !important;
 }
@@ -337,9 +337,9 @@ div.title {
     display: inline-block;
     vertical-align: top;
 }
-.main.sun-slotm .prizePool {
+/*.main.sun-slotm .prizePool {
     height: 286px;
-}
+}*/
 #num-roll .num div.isPicture {
 
     background-image: url(../images/slotm-pool-number.png) !important;
@@ -359,7 +359,7 @@ div.title {
 }
 .main.sun-slotm .content {width:800px; margin-top: 52px;}
 .main.sun-slotm .contentList {background: transparent !important;}
-.main.sun-slotm .sub_nav li {
+/*.main.sun-slotm .sub_nav li {
     background: none !important;
     border-bottom: 1px solid black;
     position: absolute;
@@ -389,14 +389,14 @@ div.title {
     width: 100%;
     display: inline-block;
     margin-top: 1px;
-    /*background: linear-gradient(to right, rgba(39,3,7,1) 0%, rgba(39,3,7,0) 100%);*/
+    background: linear-gradient(to right, rgba(39,3,7,1) 0%, rgba(39,3,7,0) 100%);
     
     background: linear-gradient(to right, rgba(39,3,7,0) 0%, rgba(39,3,7,1) 100%);
 }
 .main.sun-slotm .sub_nav li:hover, .main.sun-slotm .sub_nav li.cur {
     border: 1px solid black;
     border-bottom: none;
-}
+}*/
 .main.sun-slotm .youhui {visibility: hidden}
 .main.sun-slotm .news {
     right: 0px !important;

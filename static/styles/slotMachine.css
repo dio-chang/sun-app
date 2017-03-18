@@ -36,16 +36,16 @@
 	width: 100%;
 	height: 34px;
 	border-image:
-      linear-gradient(
-      to right,
-       rgb(255,199,134),
-        rgb(178,70,71) 30%,
-        rgb(255,199,134) 40%,
-        rgb(178,70,71) 70%,
-        rgba(42,0,0,1) 100%
-        ) 1 0%;
-      border-width: 0 0 1px 0;
-    border-style: solid;
+		linear-gradient(
+		to right,
+		rgb(255,199,134),
+		rgb(178,70,71) 30%,
+		rgb(255,199,134) 40%,
+		rgb(178,70,71) 70%,
+		rgba(42,0,0,1) 100%
+		) 1 0%;
+	border-width: 0 0 1px 0;
+	border-style: solid;
 	position: absolute;
 	z-index: -1;
 }
@@ -66,9 +66,9 @@
 
 .main_inner .sub_nav li:hover{
 	border-image:
-      linear-gradient(to right, white, #6F6176) 1 20%;
-      border-width: 1px 1px 0 1px;
-    border-style: solid;
+		linear-gradient(to right, white, #6F6176) 1 20%;
+	border-width: 1px 1px 0 1px;
+	border-style: solid;
 }
 .main_inner .sub_nav li:hover:before{
 	content: "";
@@ -97,7 +97,7 @@
 	left:264px;
 }
 .main_inner .sub_nav .mg:hover, .main_inner .sub_nav .mg.cur{
-	
+
 }
 .main_inner .sub_nav .xin{
 	left: 396px;
@@ -107,8 +107,13 @@
 .main_inner .sub_nav .xin.cur{
 }
 .prizePool{
-	float: right;
-	padding:33px 20px 0px 0px;
+	float: left;
+	padding: 33px 20px 0px 0px;
+	background: url(../images/slotmachine_pool.png) no-repeat;
+	width: 360px;
+	height: 100px;
+	background-position: left -40px;
+	padding: 46px 0 0 41px;
 }
 .prizetit{float: left; line-height: 30px;font-size: 14px; color:#000;}
 #num-roll {float: left;height: 30px;}
