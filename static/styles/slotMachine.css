@@ -8,6 +8,9 @@
 	margin-top:-10px;
 	height: auto
 }
+.main-container {
+	margin-top:12px;
+}
 .main_inner{
 	width: 1200px;
 	margin: auto;
@@ -24,52 +27,84 @@
 	z-index: 16;
 	background: url(../images/youhui.png) no-repeat;
 }
+.main_inner .sub_nav {
+	margin-top: 15px;
+}
+.main_inner .sub_nav:before {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 34px;
+	border-image:
+      linear-gradient(
+      to right,
+       rgb(255,199,134),
+        rgb(178,70,71) 30%,
+        rgb(255,199,134) 40%,
+        rgb(178,70,71) 70%,
+        rgba(42,0,0,1) 100%
+        ) 1 0%;
+      border-width: 0 0 1px 0;
+    border-style: solid;
+	position: absolute;
+	z-index: -1;
+}
 .main_inner .sub_nav li{
 	float: left;
-	height: 73px;
+	width: 132px;
+	height: 34px;
 	position: absolute;
+	padding-top:4px;
+	font-weight:bold;
+	letter-spacing:1px;
 	cursor: pointer;
+	border: 1px solid transparent;
+	background: -webkit-linear-gradient(white, #FFBF86);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main_inner .sub_nav li:hover{
+	border-image:
+      linear-gradient(to right, white, #6F6176) 1 20%;
+      border-width: 1px 1px 0 1px;
+    border-style: solid;
+}
+.main_inner .sub_nav li:hover:before{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 29px;
+	border-bottom: 4px solid #2A0000;
 }
 
 .main_inner .sub_nav .hot{
-	width: 132px;
 	left: 0px;
 }
 .main_inner .sub_nav .hot:hover{
-	background: url(../images/hotnav.png) top left;
 }
 .main_inner .sub_nav .hot.cur{
-	background: url(../images/hotnav.png) top left;
 }
 .main_inner .sub_nav .pt{
-	width:132px; 
-	left: 122px;
+	left: 132px;
 }
 .main_inner .sub_nav .pt:hover{
-	background: url(../images/ptnav.png) top left;
 }
 .main_inner .sub_nav .pt.cur{
-	background: url(../images/ptnav.png) top left;
 }
 .main_inner .sub_nav .mg{
-	width: 128px;
-	left:246px;
+	left:264px;
 }
-.main_inner .sub_nav .mg:hover{
-	background: url(../images/mgnav.png) top left;
-}
-.main_inner .sub_nav .mg.cur{
-	background: url(../images/mgnav.png) top left;
+.main_inner .sub_nav .mg:hover, .main_inner .sub_nav .mg.cur{
+	
 }
 .main_inner .sub_nav .xin{
-	width: 126px;
-	left: 370px;
+	left: 396px;
 }
 .main_inner .sub_nav .xin:hover{
-	background: url(../images/xinnav.png) top left;
 }
 .main_inner .sub_nav .xin.cur{
-	background: url(../images/xinnav.png) top left;
 }
 .prizePool{
 	float: right;
@@ -79,44 +114,44 @@
 #num-roll {float: left;height: 30px;}
 #num-roll .num{margin: 0 2px;}
 #num-roll .num div {
-    height: 30px;
-    width: 19px;
+	height: 30px;
+	width: 19px;
 }
 #num-roll .num div.isPicture {
-    width: 19px;
-    height: 30px;
-    text-indent: -600px;
-    background: url('../images/numpic.png') no-repeat;
+	width: 19px;
+	height: 30px;
+	text-indent: -600px;
+	background: url('../images/numpic.png') no-repeat;
 }
 #num-roll div.isPicture.num0 {
-    background-position: 0px center;
+	background-position: 0px center;
 }
 #num-roll div.isPicture.num1 {
-    background-position: -19px center;
+	background-position: -19px center;
 }
 #num-roll div.isPicture.num2 {
-    background-position: -38px center;
+	background-position: -38px center;
 }
 #num-roll div.isPicture.num3 {
-    background-position: -57px center;
+	background-position: -57px center;
 }
 #num-roll div.isPicture.num4 {
-    background-position: -76px center;
+	background-position: -76px center;
 }
 #num-roll div.isPicture.num5 {
-    background-position: -95px center;
+	background-position: -95px center;
 }
 #num-roll div.isPicture.num6 {
-    background-position: -114px center;
+	background-position: -114px center;
 }
 #num-roll div.isPicture.num7 {
-    background-position: -133px center;
+	background-position: -133px center;
 }
 #num-roll div.isPicture.num8 {
-    background-position: -152px center;
+	background-position: -152px center;
 }
 #num-roll div.isPicture.num9 {
-    background-position: -171px center;
+	background-position: -171px center;
 }
 #num-roll{
 	position: relative;
@@ -144,44 +179,44 @@
 .myroll1 {height: 20px; margin-bottom: 8px; float: right;}
 .myroll1 .num{margin: 0 1px;}
 .myroll1 .num div {
-    height: 20px;
-    width: 13px;
+	height: 20px;
+	width: 13px;
 }
 .myroll1 .num div.isPicture {
-    width: 13px;
-    height: 20px;
-    text-indent: -600px;
-    background: url('../images/smallnum.jpg') no-repeat;
+	width: 13px;
+	height: 20px;
+	text-indent: -600px;
+	background: url('../images/smallnum.jpg') no-repeat;
 }
 .myroll1 div.isPicture.num0 {
-    background-position: 0px center;
+	background-position: 0px center;
 }
 .myroll1 div.isPicture.num1 {
-    background-position: -13px center;
+	background-position: -13px center;
 }
 .myroll1 div.isPicture.num2 {
-    background-position: -26px center;
+	background-position: -26px center;
 }
 .myroll1 div.isPicture.num3 {
-    background-position: -39px center;
+	background-position: -39px center;
 }
 .myroll1 div.isPicture.num4 {
-    background-position: -52px center;
+	background-position: -52px center;
 }
 .myroll1 div.isPicture.num5 {
-    background-position: -65px center;
+	background-position: -65px center;
 }
 .myroll1 div.isPicture.num6 {
-    background-position: -78px center;
+	background-position: -78px center;
 }
 .myroll1 div.isPicture.num7 {
-    background-position: -91px center;
+	background-position: -91px center;
 }
 .myroll1 div.isPicture.num8 {
-    background-position: -104px center;
+	background-position: -104px center;
 }
 .myroll1 div.isPicture.num9 {
-    background-position: -117px center;
+	background-position: -117px center;
 }
 .content{
 	width: 1200px;
@@ -209,12 +244,10 @@
 	cursor: pointer;
 }
 .smallpic{
-	height: 220px;
-	width:216px;
+	height: 154px;
+	width:168px;
 	float: left;
-	margin-left: 15px;
 	cursor: pointer;
-	margin-bottom: 18px;
 	position: relative;
 }
 
@@ -222,7 +255,7 @@
 	display: none;
 	position: absolute;
 	left: 0px;
-	bottom:-25px;
+	bottom:-7px;
 	width: 100%;
 	height:46px; 
 	background:#faf7f7;
@@ -280,8 +313,8 @@
 	clear: both;
 }
 .smallpic img{
-	width: 100%;
-	height:181px;
+	width: 80%;
+	height:105px;
 }
 .bigpic img{
 	width: 100%;
@@ -344,7 +377,7 @@
 .pink .close{
 	color:#ed7fbe
 }
-/**条件筛选**/
+/**æ¡ä»¶ç­›é€‰**/
 .select{
 	padding:5px 10px;
 	border:#ddd 1px solid;
