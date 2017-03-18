@@ -315,6 +315,28 @@ a.two {color:#333;margin-right:15px;text-align:right;}
 .link3:hover .one-1 {
 	color:#eee;
 }
+.link1:hover ~ a {
+	color:#eee;
+}
+
+.link1:hover + a {
+	color:#eee;
+}
+
+.link2:hover ~ a {
+	color:#eee;
+}
+
+.link2:hover + a {
+	color:#eee;
+}
+.link3:hover ~ a {
+	color:#eee;
+}
+
+.link3:hover + a {
+	color:#eee;
+}
 
 .link4:hover .one-1 {
 	color:#eee;
