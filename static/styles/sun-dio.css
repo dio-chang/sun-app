@@ -234,7 +234,7 @@ header{    background-color: #270307 !important;height:175px;}
     color: #333;
 }
 a.only-one {
-    margin-top: 85px;
+    margin-top: -100px;
     margin-right: 40px;
     text-align: right;
     display: block;
@@ -756,7 +756,7 @@ a.tip-forget {
     font-size: 14px;
     color: #eee;
     margin-top: 135px;
-    padding-right: 25px;
+    padding-right: 20px;
 }
 .index-rows-03 p {
 	color:#7d6f71;
@@ -972,11 +972,16 @@ a.tip-forget {
     margin-left: 0;
     color: #fff;
 }
+/*
 .logOut {
-    background: url(../images/ic-log-out.png) 2px 2px no-repeat;
+    background: url(../images/ic-log-out.png) left center no-repeat;
 	padding-left:20px;
 }
-
+*/
+.logOut img{
+margin-top:-3px;
+margin-right:5px;
+}
 .promo {
     min-height: 400px;
     background: url(../images/event-tbg.png) center -25px no-repeat;
@@ -1126,9 +1131,16 @@ cursor: pointer;
 
 .hp-article {
     color: #fff !important;
+	font-size:12px;
 }
 .hp-article p {
     color: #ae5656 !important;
+	font-size:12px;
+}
+.hp-article .main-bd h3 {
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 1em;
 }
 .help .hp-content {
     background: url() !important;
@@ -1163,8 +1175,53 @@ cursor: pointer;
 .help .nav-2 a:hover {
     background: transparent;
 }
+.help .nav-2 {
+	margin-left:30px;
+}
 
 .hp-article .main-bd a {
     color: #FFF;
     text-decoration: underline;
+}
+.gameBox{background:#fff url(../images/uedloading.gif) 40% center no-repeat ;}
+.inline-block {display: inline-block !important;vertical-align: top;}
+.rest-a{margin-top:-102px !important;}
+.help .hp-nav a {font-size:12px;}
+.help .hp-nav .affairs {
+    background: transparent;
+}
+
+.help .hp-nav .hp {
+    background: transparent;
+}
+.help .hp-nav .sport {
+    background: transparent;
+}
+.help .hp-nav .keno {
+    background: transparent;
+}
+.help .hp-nav .casino {
+    background: transparent;
+}
+.help .hp-nav .promotion {
+    background: transparent;
+}
+.help .hp-nav .contact {
+    background: transparent;
+}
+
+.help .t1 {
+    font-weight: 100;
+}
+
+.table6_1 th, .table6_1 td {
+    border: 1px solid #3d1717 !important;
+    border-width: 1px 0 1px 0;
+	color:#ae5656 !important;
+}
+.table6_1 th {
+    background-color: #3d1717 !important;
+}
+.rest-b {
+    margin-top: -116px!important;
 }

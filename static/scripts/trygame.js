@@ -5,10 +5,11 @@ $(function(){
         if (r != null) return decodeURI(r[2]); return null;
     }  
 	var pid = getQueryString("pid")
+	/*
 	loading()
 	setTimeout(function(){
 		loaded()
-	},2000)
+	},2000)*/
 	$("#gameFrame").attr("src",RootUrl+"/?d=api&c=game&m=trygame&pid="+pid)
 	$(".navbar-nav").find("li").eq(7).addClass("activenav").siblings().removeClass("activenav")
 	

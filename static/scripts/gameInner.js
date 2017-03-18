@@ -10,10 +10,11 @@ $(function(){
 	var trygame =  getQueryString("m")
 	var type = getQueryString("type")
 	var game = getQueryString("game")
+	/*
 	loading()
 	setTimeout(function(){
 		loaded()
-	},2000)
+	},2000)*/
 	if(type=="ag"){
 		$("#gameFrame").attr("src",RootUrl+"?d=api&c=game&m=entergame&pid=24&gametype=6")
 		$(".navbar-nav").find("li").eq(3).addClass("activenav").siblings().removeClass("activenav")
