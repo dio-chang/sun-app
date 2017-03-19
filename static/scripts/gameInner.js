@@ -30,7 +30,7 @@ $(function(){
 		$('title').html("游戏--"+gameTitle)
 	}else{
 		$("#gameFrame").attr("src",RootUrl+"?d=api&c=game&m=entergame&pid="+pid+"&gametype="+gametype)
-		$(".navbar-nav").find("li").eq(2).addClass("activenav").siblings().removeClass("activenav")
+		$(".navbar-nav").find("li").eq(4).addClass("activenav").siblings().removeClass("activenav")
 		$('title').html("游戏--"+gameTitle)
 	}
 		
