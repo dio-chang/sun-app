@@ -64,13 +64,13 @@
   -webkit-text-fill-color: transparent;
 }
 
-.main_inner .sub_nav li:hover{
+.main_inner .sub_nav li:hover, .main_inner .sub_nav li.cur{
 	border-image:
 		linear-gradient(to right, white, #6F6176) 1 20%;
 	border-width: 1px 1px 0 1px;
 	border-style: solid;
 }
-.main_inner .sub_nav li:hover:before{
+.main_inner .sub_nav li:hover:before, .main_inner .sub_nav li.cur:before{
 	content: "";
 	display: block;
 	position: absolute;
@@ -232,7 +232,7 @@
 	display: none;
 	padding-top: 20px;
 	background: #faf7f7;
-	width: 100%;
+	width: 150%;
 	float: left;
 	padding-left: 17px;
 	margin-left: -1px;
@@ -250,7 +250,7 @@
 }
 .smallpic{
 	height: 154px;
-	width:168px;
+	width:152px;
 	float: left;
 	cursor: pointer;
 	position: relative;
@@ -263,7 +263,7 @@
 	bottom:-7px;
 	width: 100%;
 	height:46px; 
-	background:#faf7f7;
+	background:#f39c51;
 }
 .gameTab li{
 	list-style: none;
@@ -316,9 +316,10 @@
 	text-align: center;
 	margin-bottom: 13px;
 	clear: both;
+        color: white;
 }
 .smallpic img{
-	width: 80%;
+	width: 90%;
 	height:105px;
 }
 .bigpic img{

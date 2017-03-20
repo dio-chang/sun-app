@@ -158,6 +158,9 @@
 @@include("./layout/footer-sun.html")
 <script type="text/template" id="hotGame">
 		<% _(data).each(function (v, k) { %>
+		<% if (k > 0 && k <=10  && k % 5 === 0) { %>
+			<div style="clear:both"/>
+		<% } %>
 		<div class="hotgame smallpic" data-pid="<%=v.get('pid')%>" data-value="<%=v.get('value')%>" data-isshow="<%=v.get('isshow')%>">
 			<p>
 				<%if(v.get('imgurl')){%>
@@ -173,6 +176,9 @@
 	</script>
 	<script type="text/template" id="ptGame">
 		<% _(data).each(function (v, k) { %>
+		<% if (k > 0 && k <=10  && k % 5 === 0) { %>
+			<div style="clear:both"/>
+		<% } %>
 		<div class="smallpic" data-pid="<%=v.get('pid')%>" data-value="<%=v.get('value')%>" data-isshow="<%=v.get('isshow')%>" data-tit="<%=v.get('title')%>">
 			<p class="picbox">
 				<img src="@@{imgpath}/static/<%=v.get('imgurl')%>">
@@ -192,6 +198,9 @@
 	</script>
 	<script type="text/template" id="mgGame">
 		<% _(data).each(function (v, k) { %>
+		<% if (k > 0 && k <=10  && k % 5 === 0) { %>
+			<div style="clear:both"/>
+		<% } %>
 		<div class="smallpic" data-pid="<%=v.get('pid')%>" data-value="<%=v.get('value')%>" data-isshow="<%=v.get('isshow')%>">
 			<p class="picbox">
 				<img src="@@{imgpath}/static/<%=v.get('imgurl')%>">
@@ -211,6 +220,9 @@
 	</script>
 	<script type="text/template" id="xinGame">
 		<% _(data).each(function (v, k) { %>
+		<% if (k > 0 && k <=10  && k % 5 === 0) { %>
+			<div style="clear:both"/>
+		<% } %>
 		<div class="smallpic xinpic" data-pid="<%=v.get('pid')%>" data-value="<%=v.get('value')%>" data-isshow="<%=v.get('isshow')%>" data-tit="<%=v.get('title')%>">
 			<p>
 				<img src="@@{imgpath}/static/<%=v.get('imgurl')%>">
