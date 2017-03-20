@@ -2,13 +2,7 @@
 /*
 .index-slide {height: 318px !important;}
 .slide-inner {height: 320px !important;}*/
-.entertainment .banner:before {
-    content: "";
-    width: 100%;
-    height: 316px;
-    position: absolute;
-    background: linear-gradient(to right, rgba(39,3,7,1) 0%, rgba(39,3,7,0) 5%, rgba(39,3,7,0) 5%,rgba(39,3,7,1));
-}
+
 .index-screen-01 {margin-top: 1em;}
 .p2-left-box {width: 408px !important; margin-right: 10px}
 .p2-center-box {width: 408px !important; margin-right: 10px}
@@ -113,16 +107,6 @@
 	color: white;
 	background: rgba(255,255,255,.1);
 }
-.register .frame button {
-	border-width: 1px; 
-	border-style: solid; 
-	-webkit-border-image: -webkit-gradient(linear, 100% 0, 0 0, from(#B14547), to(#F6C59E)) 1 100%; 
-	-webkit-border-image: -webkit-linear-gradient(right, #B14547, #F6C59E 75%, #B14547) 1 100%; 
-	-moz-border-image: -moz-linear-gradient(right, #B14547, #F6C59E 75%, #B14547) 1 100%; 
-	-o-border-image: -o-linear-gradient(right, #B14547, #F6C59E 75%, #B14547) 1 100%; 
-	border-image: linear-gradient(to right, #B14547, #F6C59E 75%, #B14547) 1 100%; 
-	border-image: linear-gradient(to right, #B14547, #F6C59E 75%, #B14547);
-}
 .register-box {
     background-color: transparent;
     text-align: center;
@@ -196,6 +180,12 @@ div.title {
 .register button {
     border: none;
     background-color: #2F0001;
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #E4A387, #B14547) 1 20%;
+}
+.register button:hover {
+    background-color: #5F2422;
 }
 /* Register Success --------------------------------------------------------- */
 .banner-sun {
@@ -289,13 +279,6 @@ div.title {
     width: 100%;
     height: 285px;
     background: url(../images/slotbanner-sun.png) top center no-repeat;
-}
-.banner-slotm:before {
-    content: "";
-    width: 100%;
-    height: 285px;
-    position: absolute;
-    background: linear-gradient(to right, rgba(39,3,7,1) 0%, rgba(39,3,7,0) 5%, rgba(39,3,7,0) 5%,rgba(39,3,7,1));
 }
 .main.sun-slotm {
     background: none !important;
